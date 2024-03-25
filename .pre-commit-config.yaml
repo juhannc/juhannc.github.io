@@ -16,7 +16,7 @@ repos:
   - id: end-of-file-fixer
   - id: trailing-whitespace
 - repo: https://github.com/psf/black
-  rev: 24.2.0
+  rev: 24.3.0
   hooks:
   - id: black
     name: Formatting Python code (black)
@@ -37,8 +37,8 @@ repos:
   hooks:
   - id: absolufy-imports
     name: Make python imports absolute
-- repo: https://github.com/charliermarsh/ruff-pre-commit
-  rev: v0.2.1
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.3.4
   hooks:
   - id: ruff
     name: Linting Python code (ruff)
