@@ -7,7 +7,7 @@ excerpt: "AI's growing role in technology necessitates stringent safety standard
 date: 2024-09-29
 venue: "2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)"
 paperurl: # DOI url
-slidesurl: "http://juhannc.github.io/files/2024-09-29-DASC-SafetyNet-Handout.pdf"
+slidesurl: "http://www.chrstnsn.de/files/2024-09-29-DASC-SafetyNet-Handout.pdf"
 citation: "<b>Christensen, J. M.</b>, Zaeske, W., Anilkumar Girija, A., Friedrich, S., Stefani, T., Durak, U., K&ouml;ster, F., Kr&uuml;ger, T. and Hallerbach, S. &quot;Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets&quot;, in <i>2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)</i>, Sep. 2024."
 ---
 While Artificial Intelligence (AI) has become an important asset in many areas of science and technology, safety is often not treated as important as required for aviation. Neglecting safety is not an option for aviation, where strict laws and regulations govern the certification process of new aircraft. Thus, a solid understanding of the underlying AI-based system is important to certify such systems. To this day, manual inspection by humans is an essential step for certification, however requires proper tooling.

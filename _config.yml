@@ -12,7 +12,7 @@ title                    : "Johann Christensen"
 title_separator          : "-"
 name                     : &name "Johann Christensen"
 description              : &description "Multidisciplinary AI researcher with a strong background in aircraft systems, (autonomous) flight control, and robotics. Pursuing my Ph. D. (Dr.-Ing.) at the Institute for AI Safety and Security at the German Aerospace Center. Proven problem-solving skills and the ability to familiarize myself quickly with new topics and tasks."
-url                      : https://juhannc.github.io
+url                      : https://www.chrstnsn.de
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "juhannc/juhannc.github.io"
 
