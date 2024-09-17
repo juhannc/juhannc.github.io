@@ -1,7 +1,7 @@
 ---
 title: "Towards an Operational Design Domain for Safe Human-AI Teaming in the Field of AI-Based Air Traffic Controller Operations"
 collection: publications
-pubtype: conference
+category: conferences
 permalink: /publication/2024-09-29-Towards-an-Operational-Design-Domain-for-Safe-Human-AI-Teaming
 excerpt: "Advances in AI offer promising applications in aviation but pose safety challenges, particularly in Human-AI Teaming. The European Union Aviation Safety Agency (EASA) emphasizes safety in dynamic human-AI collaboration with shared goals and partial authority. This work adapts the Operational Design Domains (ODDs) concept to Air Traffic Control (ATC), defining an initial ODD for an AI-based team partner aiding conflict detection and resolution. Simulations test scenarios to evaluate ODD feasibility in ATC safety."
 date: 2024-09-29

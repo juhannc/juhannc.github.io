@@ -1,7 +1,7 @@
 ---
 title: "Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets"
 collection: publications
-pubtype: conference
+category: conferences
 permalink: /publication/2024-09-29-Towards-Certifiable-AI-in-Aviation
 excerpt: "AI's growing role in technology necessitates stringent safety standards, especially in aviation where certification is regulated by strict laws. Ensuring AI system safety requires thorough understanding and proper tools. This work presents a Safety Net, utilizing sparse lookup tables (LUTs) to address neural network failures. By combining LUTs with neural networks, a certifiable system can be created, offering a framework for 100% reliability and effective real-time corrections during operation."
 date: 2024-09-29

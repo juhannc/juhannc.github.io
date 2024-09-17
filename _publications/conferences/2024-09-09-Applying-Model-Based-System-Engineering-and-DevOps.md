@@ -1,7 +1,7 @@
 ---
 title: "Applying Model-Based System Engineering and DevOps on the Implementation of an AI-based Collision Avoidance System"
 collection: publications
-pubtype: conference
+category: conferences
 permalink: /publication/2024-10-28-Advancing-the-AI-Based-Realization-of-ACASX
 excerpt: "The integration of AI in aviation offers advancements but requires stringent regulation to ensure safety. EASA introduced a W-model framework for AI, complementing the V-model, though it diverges from the DevOps cycle commonly used in AI development. To explore harmonization, an AI-based version of ACAS X<sub>A</sub> and ACAS X<sub>U</sub> has been used as a use case. Model-Based System Engineering (MBSE) facilitated managing complexity and improved stakeholder communication."
 date: 2024-09-09

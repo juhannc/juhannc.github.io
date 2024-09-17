@@ -1,7 +1,7 @@
 ---
 title: "Automated Scenario Generation from Operational Design Domain Model for Testing AI-Based Systems in Aviation"
 collection: publications
-pubtype: journal
+category: manuscripts
 permalink: /publication/2024-09-16-Automated-Scenario-Generation-from-Operational-Design-Domain-Model
 excerpt: "Artificial Intelligence (AI) applications, including those in aviation, face regulatory challenges for safety assurance and certification. The EASA emphasizes the importance of aligning the Concept of Operations (ConOps) with the Operational Design Domain (ODD) for effective safety analysis. This study introduces a framework for generating and testing synthetic data to support ConOps. This scenario-based testing approach, combined with Model-Based Systems Engineering (MBSE), facilitates efficient verification and automated testing based on ODD definitions."
 date: 2024-09-16
