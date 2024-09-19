@@ -22,7 +22,7 @@ repository               : "juhannc/juhannc.github.io"
 author:
   # Biographic information
   avatar           : "Johann_Christensen.jpg"
-  name             : "Johann Christensen, né Lange"
+  name             : "Johann Christensen\n\n(n&eacute; Lange)"
   pronouns         : "he/him"
   bio              : "Research associate at the Institute for AI Safety and Security at the German Aerospace Center (DLR)"
   location         : "Hamburg, Germany"
