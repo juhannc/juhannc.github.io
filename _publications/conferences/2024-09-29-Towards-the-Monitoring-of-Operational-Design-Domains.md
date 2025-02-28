@@ -6,7 +6,7 @@ permalink: /publication/2024-09-29-Towards-the-Monitoring-of-Operational-Design-
 excerpt: "AI in aviation, especially in safety-critical applications, demands strict safety measures. Defining and monitoring the Operational Design Domain (ODD) is crucial for ensuring AI system safety. This involves training the AI on substantial data and understanding its operating environment. This paper introduces a novel predictive ODD monitoring methodology using temporal scene analysis. By dividing scenarios into discrete scenes and creating synthetic scenarios, this approach enhances data for assessing AI performance and safety."
 date: 2024-09-29
 venue: "2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)"
-paperurl: # DOI url
+paperurl: "https://10.1109/dasc62030.2024.10749445"
 slidesurl: # URL to slides pdf
 citation: "Anilkumar Girija, A., <b>Christensen, J. M.</b>, Stefani, T., Hoemann, E., Durak, U., K&ouml;ster, F., Hallerbach, S. and Kr&uuml;ger, T. &quot;Towards the Monitoring of Operational Design Domains using Temporal Scene Analysis in the realm of Artificial Intelligence in Aviation&quot;, in <i>2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)</i>, Sep. 2024."
 ---

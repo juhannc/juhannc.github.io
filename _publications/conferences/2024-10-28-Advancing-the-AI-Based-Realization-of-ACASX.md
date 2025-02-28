@@ -6,7 +6,7 @@ permalink: /publication/2024-10-28-Advancing-the-AI-Based-Realization-of-ACASX
 excerpt: "AI is increasingly applied in safety-critical domains like automotive and robotics, but its deployment in aviation remains limited due to stringent safety requirements. This work explores AI's potential in aviation through the Airborne Collision Avoidance Systems X (ACAS X), including ACAS X<sub>A</sub> for vertical advisories and ACAS X<sub>U</sub> for horizontal advisories. Implementations of both variants for FlightGear demonstrate their effectiveness in avoiding near mid-air collisions (NMACs). An Operational Design Domain is defined for safety considerations, and simulation tests validate the successful use of advisory predictions for collision avoidance."
 date: 2024-10-28
 venue: "36th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)"
-paperurl: # DOI url
+paperurl: "https://doi.org/10.1109/ICTAI62512.2024.00017"
 slidesurl: # URL to slides pdf
 citation: "<b>Christensen, J. M.</b>, Anilkumar Girija, A., Stefani, T., Durak, U., Hoemann, E., K&ouml;ster, F., Kr&uuml;ger, T. and Hallerbach, S. &quot;Advancing the AI-Based Realization of ACAS X Towards Real-World Application&quot;, in <i>36th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)</i>, Oct. 2024."
 ---

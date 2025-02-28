@@ -6,7 +6,7 @@ permalink: /publication/2024-09-29-Towards-an-Operational-Design-Domain-for-Safe
 excerpt: "Advances in AI offer promising applications in aviation but pose safety challenges, particularly in Human-AI Teaming. The European Union Aviation Safety Agency (EASA) emphasizes safety in dynamic human-AI collaboration with shared goals and partial authority. This work adapts the Operational Design Domains (ODDs) concept to Air Traffic Control (ATC), defining an initial ODD for an AI-based team partner aiding conflict detection and resolution. Simulations test scenarios to evaluate ODD feasibility in ATC safety."
 date: 2024-09-29
 venue: "2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)"
-paperurl: # DOI url
+paperurl: "https://doi.org/10.1109/dasc62030.2024.10749684"
 slidesurl: # URL to slides pdf
 citation: "Stefani, T., Jameel, M., Hunger, R., Gerdes, I., Anilkumar Girija, A., <b>Christensen, J. M.</b>, Bruder, C., K&ouml;ster, F., Hallerbach, S. and Kr&uuml;ger, T. &quot;Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets&quot;, in <i>2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)</i>, Sep. 2024."
 ---

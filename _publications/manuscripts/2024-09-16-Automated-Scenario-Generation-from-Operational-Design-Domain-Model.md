@@ -6,7 +6,7 @@ permalink: /publication/2024-09-16-Automated-Scenario-Generation-from-Operationa
 excerpt: "Artificial Intelligence (AI) applications, including those in aviation, face regulatory challenges for safety assurance and certification. The EASA emphasizes the importance of aligning the Concept of Operations (ConOps) with the Operational Design Domain (ODD) for effective safety analysis. This study introduces a framework for generating and testing synthetic data to support ConOps. This scenario-based testing approach, combined with Model-Based Systems Engineering (MBSE), facilitates efficient verification and automated testing based on ODD definitions."
 date: 2024-09-16
 venue: "CEAS Aeronautical Journal"
-paperurl: # DOI url
+paperurl: "https://doi.org/10.1007/s13272-024-00772-4"
 slidesurl: # URL to slides pdf
 citation: "Stefani, T., <b>Christensen, J. M.</b>, Anilkumar Girija, A., Gupta, S., Durak, U., K&ouml;ster, F., Kr&uuml;ger, T. and Hallerbach, S. &quot;Automated Scenario Generation from Operational Design Domain Model for Testing AI-Based Systems in Aviation&quot;, in <i>CEAS Aeronautical Journal</i>, Sep. 2024."
 ---

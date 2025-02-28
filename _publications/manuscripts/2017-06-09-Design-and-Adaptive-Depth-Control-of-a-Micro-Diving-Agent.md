@@ -6,7 +6,7 @@ permalink: /publication/2017-06-09-Design-and-Adaptive-Depth-Control-of-a-Micro-
 excerpt: "This letter describes the depth control of an autonomous micro diving agent (ADA), built from off-the-shelf components with open-source hardware and firmware. ADA serves as a testbed for depth controllers and a mobile sensor platform. A feedback linearization control law, enhanced with an adaptive fuzzy algorithm, addresses modeling inaccuracies and is suitable for ADA's embedded hardware. Experiments in a wave tank show that the adaptive fuzzy controller effectively manages depth regulation and profile tracking, enabling ADA to maintain stability and exhibit orbital motions akin to water particles under wave influence."
 date: 2017-06-09
 venue: "IEEE Robotics and Automation Letters (RA-L)"
-paperurl: "http://doi.org/10.1109/LRA.2017.2714142"
+paperurl: "https://doi.org/10.1109/LRA.2017.2714142"
 slidesurl: # URL to slides pdf
 citation: "Bessa, W. M., Kreuzer, E., <b>Lange, J.</b>, Pick, M. and Solowjow E. &quot;Design and Adaptive Depth Control of a Micro Diving Agent&quot;, in <i>IEEE Robotics and Automation Letters</i>, vol. 2, no. 4, pp. 1871-1877, Oct. 2017, doi: 10.1109/LRA.2017.2714142."
 ---
