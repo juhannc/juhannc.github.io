@@ -7,7 +7,7 @@ excerpt: "AI is increasingly applied in safety-critical domains like automotive 
 date: 2024-10-28
 venue: "36th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)"
 paperurl: "https://doi.org/10.1109/ICTAI62512.2024.00017"
-slidesurl: # URL to slides pdf
+slidesurl: "http://www.chrstnsn.de/files/2024-10-28-pyCASX-Handout.pdf"
 citation: "<b>Christensen, J. M.</b>, Anilkumar Girija, A., Stefani, T., Durak, U., Hoemann, E., K&ouml;ster, F., Kr&uuml;ger, T. and Hallerbach, S. &quot;Advancing the AI-Based Realization of ACAS X Towards Real-World Application&quot;, in <i>36th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)</i>, Oct. 2024."
 ---
 In recent years, artificial intelligence (AI) has been applied to a wide range of safety-critical domains, such as automotive, robotics, and aviation.
