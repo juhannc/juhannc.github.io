@@ -4,7 +4,7 @@ collection: publications
 category: supervised
 permalink: /publication/2025-01-Ensuring-the-Trustworthy-Development-of-AI-Based-Applications-Compatible-to-Future-EASA-Regulations
 excerpt: "This thesis advances EASA-compliant AI certification by introducing a methodology to define ConOps, OD, and ODD for AI-based aviation systems. It provides a structured approach to specifying these concepts, ensuring alignment with EASA's learning assurance framework and enhancing trustworthiness, safety, and regulatory compliance in AI-driven aviation applications."
-date: 2025-01
+date: 2025-01-31
 paperurl: "https://elib.dlr.de/212205/"
 slidesurl: # URL to slides pdf
 citation: "Werner, F. &quot;Ensuring the Trustworthy Development of AI Based Applications Compatible to Future EASA Regulations&quot;, Master's Thesis, <i>Ulm University of Applied Sciences</i>, January 2025."
