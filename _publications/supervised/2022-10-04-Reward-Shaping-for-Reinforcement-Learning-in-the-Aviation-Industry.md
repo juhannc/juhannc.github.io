@@ -5,6 +5,7 @@ category: supervised
 permalink: /publication/2022-10-04-Reward-Shaping-for-Reinforcement-Learning-in-the-Aviation-Industry
 excerpt: "This work advances robotic automation by applying deep reinforcement learning to a robotic gripper for door opening. It compares SAC and PPO algorithms, explores reward function design for improved learning behavior, and validates results in simulated environments. Findings highlight PPO’s efficiency and the critical role of reward shaping in training success."
 date: 2022-10-04
+venue: "Hamburg University of Technology (TUHH)"
 paperurl: # URL to paper pdf
 slidesurl: # URL to slides pdf
 citation: "Wei, J. &quot;Reward Shaping for Reinforcement Learning in the Aviation Industry&quot;, Master's Thesis, <i>Hamburg University of Technology</i>, October 2022."
