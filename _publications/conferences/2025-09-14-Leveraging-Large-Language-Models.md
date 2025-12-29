@@ -8,7 +8,7 @@ date: 2025-09-14
 venue: "2025 AIAA DATC/IEEE 44th Digital Avionics Systems Conference (DASC)"
 paperurl: "https://10.1109/DASC66011.2025.11257297"
 slidesurl: # URL to slides pdf
-citation: "Berro, C., Deligiannaki, F., Stefani, T., <b>Christensen, J. M.</b>, Gerdes, I., K&ouml;ster, F. &quot;Leveraging Large Language Models as an Interface to Conflict Resolution for Human-AI Alignment in Air Traffic Control&quot;, in <i>2025 AIAA DATC/IEEE 44th Digital Avionics Systems Conference (DASC)</i>, Sep. 2025."
+citation: "Berro, C., Deligiannaki, F., Stefani, T., <b>Christensen, J. M.</b>, Gerdes, I., K&ouml;ster and F. &quot;Leveraging Large Language Models as an Interface to Conflict Resolution for Human-AI Alignment in Air Traffic Control&quot;, in <i>2025 AIAA DATC/IEEE 44th Digital Avionics Systems Conference (DASC)</i>, Sep. 2025."
 ---
 A steep aircraft increase is forecasted in the near future, putting additional strain on en-route air traffic control.
 To meet the safety and efficiency goals, contemporary research explores the Single Controller Operations (SCOs) concept to replace traditional positioning of two Air Traffic Controllers (ATCOs) per sector.
