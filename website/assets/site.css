@@ -22,3 +22,4 @@
 @media(max-width:600px){.journey-list .organization-logo{position:relative;top:6px}}
 
 .theme-toggle{display:flex;align-items:center;justify-content:center}.theme-toggle svg{width:17px;height:17px;flex-shrink:0}
+@media(max-width:600px){.identity-links{grid-column:1/-1;grid-row:2;margin-top:0}.social{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px}.social a{white-space:nowrap}}
