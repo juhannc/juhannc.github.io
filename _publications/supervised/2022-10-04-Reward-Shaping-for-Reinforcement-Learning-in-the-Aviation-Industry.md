@@ -2,6 +2,7 @@
 title: "Reward Shaping for Reinforcement Learning in the Aviation Industry"
 collection: publications
 category: supervised
+bibkey: Wei2022
 permalink: /publication/2022-10-04-Reward-Shaping-for-Reinforcement-Learning-in-the-Aviation-Industry
 excerpt: "This work advances robotic automation by applying deep reinforcement learning to a robotic gripper for door opening. It compares SAC and PPO algorithms, explores reward function design for improved learning behavior, and validates results in simulated environments. Findings highlight PPO’s efficiency and the critical role of reward shaping in training success."
 date: 2022-10-04

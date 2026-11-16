@@ -19,6 +19,7 @@ Open http://127.0.0.1:4000. The local configuration ensures that styles and scri
 
 - `_pages/about.md`: homepage.
 - `_pages/publications.html`: publication index, grouped by category and sorted newest first.
+- `_data/citations.json`: generated BibLaTeX and traditional BibTeX snippets for each publication’s citation tabs; regenerate with `scripts/export_citations.py` (see `scripts/README.md`).
 - `_publications/`: publication metadata, short summaries, abstracts, and citations. Keep existing permalinks when updating entries. Label accepted and forthcoming work explicitly.
 - `_pages/cv.md`: CV, with selected publications drawn from the publication collection by `bibkey`.
 - `files/CV.pdf`: downloadable resume; keep this URL stable.

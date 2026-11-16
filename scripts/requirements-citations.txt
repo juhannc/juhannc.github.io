@@ -1,0 +1,3 @@
+# Optional maintenance tools; not required for Jekyll builds.
+bibtexparser>=1.4,<2
+PyYAML>=6,<7

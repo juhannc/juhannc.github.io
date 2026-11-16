@@ -190,6 +190,8 @@ exclude:
   - package-lock.json
   - Gemfile.lock
   - docs
+  - scripts
+  - tests
   - AGENTS.md
   - Rakefile
   - README

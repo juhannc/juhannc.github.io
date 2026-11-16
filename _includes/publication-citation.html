@@ -1,0 +1,22 @@
+{% assign formats = site.data.citations[page.bibkey] %}
+{% if formats %}
+<section class="citation-widget" data-citation-widget aria-labelledby="cite-this-work">
+  <h2 id="cite-this-work">Cite this work</h2>
+  <div class="citation-tabs" data-citation-tabs aria-label="Citation format" hidden>
+    <button type="button" id="citation-tab-biblatex" data-citation-format="biblatex" aria-controls="citation-panel-biblatex">BibLaTeX</button>
+    <button type="button" id="citation-tab-bibtex" data-citation-format="bibtex" aria-controls="citation-panel-bibtex">BibTeX</button>
+  </div>
+  <div id="citation-panel-biblatex" class="citation-panel" data-citation-panel="biblatex">
+    <h3>BibLaTeX</h3>
+    <pre tabindex="0" aria-label="BibLaTeX citation"><code>{{ formats.biblatex | escape }}</code></pre>
+  </div>
+  <div id="citation-panel-bibtex" class="citation-panel" data-citation-panel="bibtex">
+    <h3>BibTeX</h3>
+    <pre tabindex="0" aria-label="BibTeX citation"><code>{{ formats.bibtex | escape }}</code></pre>
+  </div>
+  <div class="citation-actions">
+    <button type="button" class="citation-copy" data-citation-copy hidden>Copy citation</button>
+    <span class="citation-status" data-citation-status role="status" aria-live="polite"></span>
+  </div>
+</section>
+{% endif %}

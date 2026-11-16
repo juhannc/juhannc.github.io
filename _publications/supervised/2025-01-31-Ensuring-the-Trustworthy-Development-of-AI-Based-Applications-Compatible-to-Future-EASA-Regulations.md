@@ -2,6 +2,7 @@
 title: "Ensuring the Trustworthy Development of AI Based Applications Compatible to Future EASA Regulations"
 collection: publications
 category: supervised
+bibkey: Werner2025
 permalink: /publication/2025-01-Ensuring-the-Trustworthy-Development-of-AI-Based-Applications-Compatible-to-Future-EASA-Regulations
 excerpt: "This thesis advances EASA-compliant AI certification by introducing a methodology to define ConOps, OD, and ODD for AI-based aviation systems. It provides a structured approach to specifying these concepts, ensuring alignment with EASA's learning assurance framework and enhancing trustworthiness, safety, and regulatory compliance in AI-driven aviation applications."
 date: 2025-01-31

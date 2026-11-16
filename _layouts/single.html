@@ -3,6 +3,9 @@ layout: default
 ---
 
 {% include base_path %}
+{% if page.collection == 'publications' and site.data.citations[page.bibkey] %}
+<link rel="stylesheet" href="{{ '/assets/css/citation-tabs.css' | relative_url }}">
+{% endif %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
 {% include page__hero.html %}
@@ -60,6 +63,8 @@ layout: default
             slidesurl=page.slidesurl
             bibtexurl=page.bibtexurl
         %}
+
+        {% if page.collection == 'publications' %}{% include publication-citation.html %}{% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label |
             default: "Direct Link" }}</a></div>{% endif %}
