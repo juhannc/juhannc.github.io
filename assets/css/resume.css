@@ -1,13 +1,14 @@
 /* Resume styles use the active Academic Pages theme in light and dark modes. */
 .resume { color: var(--global-text-color); font-size: .9rem; line-height: 1.65; }
-.resume-header { padding-bottom: 2rem; border-bottom: 3px solid var(--global-base-color); }
+.resume-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; padding-bottom: 2rem; border-bottom: 3px solid var(--global-base-color); }
+.resume-header > div { min-width: 0; flex: 1; }
 .resume-eyebrow { margin: 0 0 .65rem; font-size: .7rem; letter-spacing: .15em; text-transform: none; font-weight: 700; color: var(--global-text-color); }
 .resume h1 { margin: 0 0 .45rem; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.12; letter-spacing: -.04em; }
 .resume-tagline { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
 .resume-tagline span { padding-inline: .4rem; color: var(--global-base-color); }
 .resume-intro { max-width: 44rem; margin: 0 0 1.2rem; }
 .resume a { text-underline-offset: .2em; }
-.resume-download { display: inline-flex; align-items: center; gap: 1rem; padding: .9rem 1.3rem; border: 1px solid var(--global-text-color); border-radius: .35rem; color: var(--global-text-color); text-decoration: none; font-size: .8rem; font-weight: 700; }
+.resume-download { flex-shrink: 0; display: inline-flex; flex-direction: column; align-items: flex-start; gap: .2rem; padding: .9rem 1.3rem; border: 1px solid var(--global-text-color); border-radius: .35rem; color: var(--global-text-color); text-decoration: none; font-size: .8rem; font-weight: 700; }
 .resume-download span { font-size: .65rem; letter-spacing: .1em; }
 .resume-download:hover { background: var(--global-text-color); color: var(--global-bg-color); }
 .resume a:focus-visible { outline: 3px solid var(--global-link-color); outline-offset: 5px; }
@@ -52,6 +53,10 @@
 .resume-skill-groups dt { margin-bottom: .3rem; font-weight: 700; }
 .resume-skill-groups dd { margin: 0; }
 
+@media (max-width: 760px) {
+  .resume-header { flex-direction: column; gap: 1rem; }
+  .resume-download { flex-direction: row; align-items: center; gap: 1rem; }
+}
 @media print {
   .masthead, .page__footer, .resume-download, .resume-sections { display: none !important; }
   .resume { font-size: 10pt; color: #222; }
