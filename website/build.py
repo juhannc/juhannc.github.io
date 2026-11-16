@@ -93,8 +93,12 @@ def build(out):
     render('404.html', '/404.html', 'Page Not Found', '')
     shutil.copytree(HERE / 'assets', out / 'assets', dirs_exist_ok=True)
     shutil.copytree(ROOT / 'images', out / 'images', dirs_exist_ok=True)
-    resources = ['Johann_Christensen_Headshot.jpg', 'files/Johann_Christensen_Resume.pdf',
-                 'files/2024-09-29-DASC-SafetyNet-Handout.pdf', 'files/2024-10-28-ICTAI-pyCASX-Handout.pdf']
+    resources = {'Johann_Christensen_Headshot.jpg', 'files/Johann_Christensen_Resume.pdf'}
+    for publication in publications:
+        for field in ('handouturl', 'posterurl', 'slidesurl', 'paperurl'):
+            url = publication.get(field) or ''
+            if url.startswith('/files/'):
+                resources.add(url.lstrip('/'))
     for f in resources:
         target = out / f
         target.parent.mkdir(parents=True, exist_ok=True)
