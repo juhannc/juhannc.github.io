@@ -18,6 +18,9 @@
       const label = `Theme: ${preference} (${resolved}). Switch to ${next}.`;
       button.setAttribute('aria-label', label);
       button.title = label;
+      button.querySelectorAll('[data-theme-icon]').forEach(icon => {
+        icon.toggleAttribute('hidden', icon.dataset.themeIcon !== preference);
+      });
     }
   }
   apply();

@@ -18,5 +18,7 @@
 
 .organization-logo.berkeley-logo img{transform:scale(1.35)}
 /* Align organization marks with the name/role rather than the date above. */
-@media(min-width:1101px),(min-width:601px) and (max-width:900px){.journey-list .organization-logo{position:relative;top:18px}}
-@media(max-width:600px){.journey-list .organization-logo{position:relative;top:12px}}
+@media(min-width:1101px),(min-width:601px) and (max-width:900px){.journey-list .organization-logo{position:relative;top:9px}}
+@media(max-width:600px){.journey-list .organization-logo{position:relative;top:6px}}
+
+.theme-toggle{display:flex;align-items:center;justify-content:center}.theme-toggle svg{width:17px;height:17px;flex-shrink:0}
