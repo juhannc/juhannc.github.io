@@ -26,6 +26,7 @@ redirect_from:
     <a id="resume-tab-expertise" href="#expertise" data-resume-tab="expertise">Skills</a>
     <a id="resume-tab-teaching" href="#teaching" data-resume-tab="teaching">Teaching</a>
     <a id="resume-tab-selected-publications" href="#selected-publications" data-resume-tab="selected-publications">Publications</a>
+    <a id="resume-tab-service" href="#service" data-resume-tab="service">Reviewing &amp; Service</a>
   </nav>
   <div class="resume-panels">
     <div id="resume-panel-experience" class="resume-tab-panel" data-resume-panel="experience">
@@ -168,6 +169,25 @@ redirect_from:
         {% endfor %}
       </ol>
     </section>
+    </div>
+    <div id="resume-panel-service" class="resume-tab-panel" data-resume-panel="service">
+      <section aria-labelledby="service">
+        <h2 id="service">Reviewing &amp; Service</h2>
+        {% for activity in site.data.service %}
+        <article class="resume-entry">
+          <h3>{{ activity.short }} · {{ activity.year }}</h3>
+          <p>{{ activity.role }} · {{ activity.venue }}{% if activity.publisher %} ({{ activity.publisher }}){% endif %}</p>
+          {% if activity.recognition %}<p>{{ activity.recognition }}</p>{% endif %}
+        </article>
+        {% endfor %}
+        <h3>Conference Service</h3>
+        <p>Session Chair · ICTAI 2024</p>
+        <h3>Recognition</h3>
+        <p>Best of Session Paper Award · DASC 2024 · Towards Certifiable AI in Aviation.</p>
+        <h3>Thesis Supervision</h3>
+        <p>Supervised three master’s theses: Jiahua Wei (2022), Friedrich Werner (2025), and Mina Randolf (2026), spanning reinforcement learning, operational design domains, and Safety-by-Design.</p>
+        <a href="/publications/#supervised">View Supervised Theses ↗</a>
+      </section>
     </div>
   </div>
 </div>

@@ -78,5 +78,9 @@
   "Werner2025": {
     "biblatex": "@thesis{Werner2025,\n  author = {Werner, Friedrich},\n  title = {Ensuring the Trustworthy Development of AI-Based Applications Compatible to Future EASA Regulations},\n  date = {2025-01},\n  institution = {Ulm University of Applied Sciences},\n  type = {mathesis},\n  pages = {1--93},\n  location = {Ulm, Germany},\n  url = {https://elib.dlr.de/212205/},\n  pagetotal = {93},\n}\n",
     "bibtex": "@mastersthesis{Werner2025,\n  author = {Werner, Friedrich},\n  title = {Ensuring the Trustworthy Development of AI-Based Applications Compatible to Future EASA Regulations},\n  pages = {1--93},\n  url = {https://elib.dlr.de/212205/},\n  address = {Ulm, Germany},\n  year = {2025},\n  month = jan,\n  school = {Ulm University of Applied Sciences},\n}\n"
+  },
+  "Randolf2026": {
+    "biblatex": "@thesis{Randolf2026,\n  author = {Randolf, Mina},\n  title = {Safety-by-Design Methodology for Simulation-Based Dataset Creation and AI Model Development},\n  date = {2026-06-02},\n  institution = {University of Cologne},\n  type = {mathesis},\n  pages = {1--63},\n  location = {Cologne, Germany},\n  url = {https://elib.dlr.de/224824/},\n  pagetotal = {63},\n}\n",
+    "bibtex": "@mastersthesis{Randolf2026,\n  author = {Randolf, Mina},\n  title = {Safety-by-Design Methodology for Simulation-Based Dataset Creation and AI Model Development},\n  pages = {1--63},\n  url = {https://elib.dlr.de/224824/},\n  address = {Cologne, Germany},\n  year = {2026},\n  month = jun,\n  school = {University of Cologne},\n}\n"
   }
 }

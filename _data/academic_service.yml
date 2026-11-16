@@ -1,0 +1,9 @@
+conference_service:
+- role: Session Chair
+  venue: IEEE International Conference on Tools with Artificial Intelligence (ICTAI)
+  year: 2024
+recognition:
+- title: Best of Session Paper Award
+  venue: Digital Avionics Systems Conference (DASC)
+  year: 2024
+  bibkey: Christensen2024

@@ -70,3 +70,11 @@ Publication pages distinguish authored papers, academic theses, preprints, and s
 - [Google Scholar]({{ site.author.googlescholar }}): Publications and citations.
 - [GitHub](https://github.com/juhannc): Public software and repositories.
 - [Email](mailto:{{ site.author.email }}): Professional contact.
+
+## Academic Service (2026)
+
+Johann reviews for IEEE Transactions on Aerospace and Electronic Systems (IEEE TAES), Annals of the New York Academy of Sciences (Wiley), ICML, and NeurIPS in 2026. He received an ICML 2026 Silver Reviewer Award.
+
+Johann supervised three master's theses: Jiahua Wei (TUHH, 2022, reinforcement-learning reward shaping), Friedrich Werner (THU, 2025, trustworthy aviation AI and operational design domains), and Mina Randolf (University of Cologne, 2026, Safety-by-Design dataset creation and AI model development).
+
+He served as a session chair at the IEEE International Conference on Tools with Artificial Intelligence (ICTAI) in 2024. His DASC 2024 paper, “Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets”, received a Best of Session Paper Award. This recognition is specific to that conference session. Conference talk handouts are available alongside the corresponding papers.

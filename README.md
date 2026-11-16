@@ -1,43 +1,35 @@
-# Johann Christensen’s website
+# Johann Christensen’s Website
 
-Personal research website at [chrstnsn.de](https://www.chrstnsn.de), built with Jekyll and the [Academic Pages](https://github.com/academicpages/academicpages.github.io) theme.
+Personal research website at https://www.chrstnsn.de, built as static HTML with Python/Jinja, local CSS, and small JavaScript enhancements. GitHub Actions builds and deploys to GitHub Pages when `master` changes.
 
-## Local preview
+## Build and Preview
 
-Use Ruby 3.4, Bundler 2.7, and Node.js 22 or newer:
-
-```sh
-bundle install
-npm ci
-npm run build:js
-bundle exec jekyll serve --config _config.yml,_config_local.yml
-```
-
-Open http://127.0.0.1:4000. The local configuration ensures that styles and scripts load from your local build.
-
-## Content
-
-- `_pages/about.md`: homepage.
-- `_pages/publications.html`: publication index, grouped by category and sorted newest first.
-- `_data/citations.json`: generated BibLaTeX and traditional BibTeX snippets for each publication’s citation tabs; regenerate with `scripts/export_citations.py` (see `scripts/README.md`).
-- `_publications/`: publication metadata, short summaries, abstracts, and citations. Keep existing permalinks when updating entries. Label accepted and forthcoming work explicitly.
-- `_pages/cv.md`: CV, with selected publications drawn from the publication collection by `bibkey`.
-- `files/CV.pdf`: downloadable resume; keep this URL stable.
-- `llms.txt`: concise profile for language models; selected research links and status labels are generated from the same publication metadata.
-- `_config.yml` and `_data/navigation.yml`: profile information, site settings, and navigation.
-- `assets/css/profile.css` and `assets/css/resume.css`: custom page styles using the active theme’s colors.
-
-The homepage, publications, sitemap, and CV share `_layouts/profile.html` and retain the author sidebar. Individual papers retain their citations and existing URLs. The CV adds `_layouts/resume.html` for its content styles and accessible section tabs.
-
-Template demo posts, talks, teaching pages, sample images, notebook generators, and talk-map tooling have been removed. Shared theme layouts, includes, and assets remain available for the site and future upstream updates.
-
-## Build and deployment
+Python 3.13:
 
 ```sh
-npm run build:js
-bundle exec jekyll build
+python -m venv .venv
+.venv/bin/python -m pip install -r website/requirements.txt
+.venv/bin/python website/build.py --output _site
+.venv/bin/python website/check.py _site
+.venv/bin/python -m http.server 4173 --directory _site --bind 127.0.0.1
 ```
 
-The GitHub Actions workflow in `.github/workflows/jekyll.yml` builds and deploys pushes to `master` with the committed Ruby and npm lockfiles. No Python tooling is required to build the site.
+Open http://127.0.0.1:4173/. Run regression checks with `.venv/bin/python -m unittest discover -s tests -v`.
 
-In GitHub repository Settings → Pages, set the publishing source to **GitHub Actions**. The workflow builds with the committed Jekyll 4 dependencies; branch-based Pages publishing uses an older Jekyll/Sass toolchain that cannot compile the theme.
+## Editing Content
+
+- `website/templates/`: page layouts and shared publication/reviewing components.
+- `website/assets/`: CSS, interaction scripts, and organization logos (with source attribution).
+- `_publications/`: canonical publication metadata, short summaries, abstracts, links, and status. `handouturl` adds a Talk Handout action on the paper and publication cards.
+- `_data/citations.json`: public BibLaTeX and BibTeX citations. Regenerate from the reference library with `python scripts/export_citations.py /path/to/literature.bib`.
+- `_pages/cv.md`: curated career, education, skills, and teaching sections. The production builder extracts these sections; selected publications and reviewing/supervision panels use shared templates and canonical data.
+- `_data/service.yml`: peer reviewing. `_data/academic_service.yml`: conference service and recognition.
+- `_config.yml`: identity/profile links used in the LLM profile. `llms.txt`: detailed machine-readable profile (source with a few legacy Liquid substitutions handled by the builder).
+- `files/`: resume and conference handout PDFs. `Johann_Christensen_Headshot.jpg`: exact full-resolution headshot, available at the domain root.
+- `CNAME`: canonical domain, copied into the published artifact. The build also emits `.nojekyll`, canonical metadata, structured profile data, sitemap, robots.txt, and legacy URL redirects.
+
+The old Academic Pages/Jekyll layouts and styles are retained as historical source for now. They are not built, installed, or published by the production workflow. Only explicitly selected static assets and generated pages enter `_site`; no local bibliography, resume source, presentation source, speaker notes, or repository files are published.
+
+## Conference Handouts
+
+The DASC 2024 SafetyNet and ICTAI 2024 pyCASX handouts are hosted locally beside their papers. They were taken from the author's presentation release `release/c900ec6`. Broader internal/status presentations and speaker-note versions are not included. Add a handout to a publication only after its content is matched to that paper.

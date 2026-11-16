@@ -1,0 +1,4 @@
+<div class="conference-service">
+  {% for activity in academic_service.conference_service %}<div><p class="eyebrow">Conference Service · {{activity.year}}</p><h3>{{activity.role}}</h3><p>{{activity.venue}}</p></div>{% endfor %}
+  {% for award in academic_service.recognition %}<div class="recognition-note"><p class="eyebrow">Recognition · {{award.year}}</p><p><span aria-hidden="true">✦</span> {{award.title}} · DASC {{award.year}}</p><a href="{{award.publication.url}}">{{award.publication.title}} ↗</a></div>{% endfor %}
+</div>

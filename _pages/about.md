@@ -55,3 +55,10 @@ redirect_from:
     {% if publication %}{% include publication-entry.html publication=publication %}{% endif %}
   {% endfor %}
 </section>
+
+<section class="profile-section" aria-labelledby="academic-service">
+  <h2 id="academic-service">Academic Service</h2>
+  <p>In 2026, I review for IEEE Transactions on Aerospace and Electronic Systems (IEEE TAES), Annals of the New York Academy of Sciences (Wiley), ICML, and NeurIPS. I received an ICML 2026 Silver Reviewer Award.</p>
+  <p>My supervised student research includes Mina Randolf’s 2026 master’s thesis on Safety-by-Design for simulation-based dataset creation and AI model development.</p>
+  <a href="/cv/#service">Reviewing &amp; Supervision ↗</a>
+</section>

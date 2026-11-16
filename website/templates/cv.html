@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<header class="page-heading cv-heading"><div><p class="eyebrow">Experience &amp; Qualifications</p><h1>Curriculum Vitae<span class="dot">.</span></h1><p class="lead">Expert for Safe AI Engineering / PhD Candidate</p><p>A background in aviation, robotics, and applied machine learning. A focus on making intelligent systems dependable.</p></div><a class="button download" href="/files/CV.pdf" download>Download Resume <span>PDF ↗</span></a></header>
+<div data-resume-tabs>
+  <nav class="resume-sections" aria-label="CV Sections">
+    {% for id,label in [('experience','Experience'),('education','Education'),('expertise','Skills'),('teaching','Teaching'),('selected-publications','Publications'),('service','Reviewing & Service')] %}
+    <a id="resume-tab-{{id}}" href="#{{id}}" data-resume-tab="{{id}}">{{label}}</a>
+    {% endfor %}
+  </nav>
+  <div class="resume-panels">
+  {% for panel in cv_panels %}
+    {% if panel.id=='selected-publications' %}
+    <div id="resume-panel-selected-publications" class="resume-tab-panel" data-resume-panel="selected-publications">
+      <section aria-labelledby="selected-publications">
+        <div class="section-heading"><div><p class="eyebrow">Research Highlights</p><h2 id="selected-publications">Selected Publications</h2></div><a class="text-link" href="/publications/">All Publications →</a></div>
+        <p class="section-intro">Selected work on operational design domains, AI engineering, neural-network assurance, and human–AI teaming.</p>
+        {% for p in cv_selected %}{% include 'card.html' %}{% endfor %}
+      </section>
+    </div>
+    {% elif panel.id=='service' %}
+    <div id="resume-panel-service" class="resume-tab-panel" data-resume-panel="service">
+      <section aria-labelledby="service"><div class="section-heading"><div><p class="eyebrow">Contributing to the Community</p><h2 id="service">Reviewing &amp; Service</h2></div></div>
+      {% include 'reviewing.html' %}
+      {% include 'conference-service.html' %}
+      <div class="section-heading supervision-heading"><div><p class="eyebrow">Student Research</p><h2>Thesis Supervision</h2></div><a class="text-link" href="/service/#supervised">View All Theses →</a></div>
+      <div class="supervision-list">{% for p in supervised %}<a href="{{p.url}}"><span>{{p.year}}</span><strong>{{p.authors}}</strong><small>{{p.title}}</small><span class="supervision-arrow" aria-hidden="true">↗</span></a>{% endfor %}</div>
+      </section>
+    </div>
+    {% else %}{{panel.html}}{% endif %}
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

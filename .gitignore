@@ -27,3 +27,8 @@ assets/js/main.min.js
 # Python maintenance tools
 __pycache__/
 *.pyc
+
+# Static site output
+website/dist/
+
+.venv/

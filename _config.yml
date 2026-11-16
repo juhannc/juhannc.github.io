@@ -187,6 +187,7 @@ exclude:
   - package-lock.json
   - Gemfile.lock
   - docs
+  - website
   - scripts
   - tests
   - AGENTS.md
