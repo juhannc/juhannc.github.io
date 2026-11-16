@@ -1,5 +1,6 @@
 ---
 layout: resume
+author_profile: true
 title: "CV"
 permalink: /cv/
 excerpt: "Johann Christensen — Safe AI Engineering, aviation safety, and robotics."
@@ -11,15 +12,9 @@ redirect_from:
 <header class="resume-header">
   <div>
     <p class="resume-eyebrow">Curriculum vitae</p>
-    <h1 id="resume-title">Johann Christensen</h1>
+    <h1 id="profile-title">Johann Christensen</h1>
     <p class="resume-tagline">Expert for Safe AI Engineering <span aria-hidden="true">/</span> PhD Candidate</p>
     <p class="resume-intro">Developing resilient AI systems for aviation, with a focus on Safety-by-Design, operational design domains, and the path to certification.</p>
-    <nav class="resume-contact" aria-label="Contact and research profiles">
-      <a href="mailto:johannchristensen@outlook.de">Email</a>
-      <a href="https://github.com/juhannc">GitHub</a>
-      <a href="https://orcid.org/0000-0001-9871-122X">ORCID</a>
-      <a href="{{ site.author.googlescholar }}">Google Scholar</a>
-    </nav>
   </div>
   <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download resume <span>PDF ↗</span></a>
 </header>
@@ -28,8 +23,7 @@ redirect_from:
   <nav class="resume-sections" aria-label="CV sections">
     <a id="resume-tab-experience" href="#experience" data-resume-tab="experience">Experience</a>
     <a id="resume-tab-education" href="#education" data-resume-tab="education">Education</a>
-    <a id="resume-tab-expertise" href="#expertise" data-resume-tab="expertise">Technical skills</a>
-    <a id="resume-tab-project-leadership" href="#project-leadership" data-resume-tab="project-leadership">Leadership</a>
+    <a id="resume-tab-expertise" href="#expertise" data-resume-tab="expertise">Skills</a>
     <a id="resume-tab-teaching" href="#teaching" data-resume-tab="teaching">Teaching</a>
     <a id="resume-tab-selected-publications" href="#selected-publications" data-resume-tab="selected-publications">Publications</a>
   </nav>
@@ -94,40 +88,35 @@ redirect_from:
     <section aria-labelledby="education">
       <h2 id="education">Education</h2>
       <article class="resume-entry">
-        <p class="resume-date">October 2024 – 2027 (expected)</p>
         <h3>PhD (Dr.-Ing.) in Safe AI Engineering</h3>
         <p class="resume-organization">Ruhr University Bochum</p>
+        <p class="resume-date">October 2024 – 2027 (expected)</p>
         <p>Working title: On the Development of Safety-by-Design AI-Based Systems in Safety-Critical Applications</p>
         <p class="resume-detail">Supervisor: Prof. Frank Köster</p>
       </article>
       <article class="resume-entry">
+        <h3>External Researcher · Reinforcement Learning</h3>
+        <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
         <p class="resume-date">February 2021 – August 2023</p>
-        <h3>Doctoral Research · Reinforcement Learning</h3>
-        <p class="resume-organization">Hamburg University of Technology (TUHH) · External research</p>
         <p>Researched reinforcement learning for mechatronic systems, using linear parameter-varying models to accelerate training.</p>
       </article>
       <article class="resume-entry">
-        <p class="resume-date">October 2017 – September 2019</p>
         <h3>M.Sc. in Aircraft Systems Engineering</h3>
         <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
-      </article>
-      <article class="resume-entry">
-        <p class="resume-date">October 2018 – September 2019</p>
-        <h3>Master’s thesis · UC Berkeley</h3>
-        <p>Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots</p>
-        <p class="resume-detail">Supervisor: Prof. Koushil Sreenath</p>
-      </article>
-      <article class="resume-entry">
-        <p class="resume-date">October 2012 – September 2016</p>
-        <h3>B.Sc. in Mechanical Engineering</h3>
-        <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
-        <p>Focus on Aircraft Systems Engineering.</p>
+        <p class="resume-date">October 2017 – September 2019</p>
+        <div class="resume-thesis">
+          <h4>Master’s thesis · M.Sc. component</h4>
+          <p class="resume-organization">Hybrid Robotics Lab · University of California, Berkeley</p>
+          <p class="resume-date">October 2018 – September 2019</p>
+          <p>Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots</p>
+          <p class="resume-detail">Supervisor: Prof. Koushil Sreenath</p>
+        </div>
       </article>
     </section>
     </div>
     <div id="resume-panel-expertise" class="resume-tab-panel" data-resume-panel="expertise">
     <section aria-labelledby="expertise">
-      <h2 id="expertise">Technical skills</h2>
+      <h2 id="expertise">Skills</h2>
       <dl class="resume-skill-groups">
         <div><dt>AI &amp; machine learning</dt><dd>Python, PyTorch, reinforcement learning (PPO, SAC), MLOps, and neural-network assurance.</dd></div>
         <div><dt>Robotics &amp; control</dt><dd>ROS, PX4, C++ for robotics and flight-control integration, MATLAB/Simulink, model predictive control, and control barrier functions.</dd></div>
@@ -141,12 +130,6 @@ redirect_from:
         <div><dt>German</dt><dd>Native</dd></div>
         <div><dt>English</dt><dd>Fluent · C2</dd></div>
       </dl>
-    </section>
-    </div>
-    <div id="resume-panel-project-leadership" class="resume-tab-panel" data-resume-panel="project-leadership">
-    <section aria-labelledby="project-leadership">
-      <h2 id="project-leadership">Project leadership</h2>
-      <p>Research proposals and funding acquisition; interdisciplinary project management; coordination with industrial partners and suppliers; conference presentations; and student mentoring.</p>
     </section>
     </div>
     <div id="resume-panel-teaching" class="resume-tab-panel" data-resume-panel="teaching">

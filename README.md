@@ -27,7 +27,7 @@ Open http://127.0.0.1:4000. The local configuration ensures that styles and scri
 - `_config.yml` and `_data/navigation.yml`: profile information, site settings, and navigation.
 - `assets/css/profile.css` and `assets/css/resume.css`: custom page styles using the active theme’s colors.
 
-The homepage and publications share `_layouts/profile.html` and retain the author sidebar. Individual papers retain their citations and existing URLs. The CV uses `_layouts/resume.html`.
+The homepage, publications, sitemap, and CV share `_layouts/profile.html` and retain the author sidebar. Individual papers retain their citations and existing URLs. The CV adds `_layouts/resume.html` for its content styles and accessible section tabs.
 
 Template demo posts, talks, teaching pages, sample images, notebook generators, and talk-map tooling have been removed. Shared theme layouts, includes, and assets remain available for the site and future upstream updates.
 

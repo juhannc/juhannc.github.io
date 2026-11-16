@@ -1,7 +1,7 @@
 /* A shared reading layout for the homepage and publication index. */
 #main.profile-main { display: grid; grid-template-columns: 230px minmax(0, 1fr); align-items: start; gap: 4rem; max-width: 1200px; margin: 2.5rem auto 0; padding: 0 1.5rem 4rem; }
 .profile-main > .sidebar { position: sticky; top: 5.5rem; bottom: auto; float: none; width: auto; max-width: none; max-height: calc(100vh - 6.5rem); overflow-y: auto; margin: 0; padding: 0 !important; transform: none; }
-.profile-main .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: center 20%; max-width: 150px; border-radius: 50%; padding: 0; border: 1px solid var(--global-border-color); }
+.profile-main .author__avatar img { width: 150px; height: auto; max-width: 150px; border-radius: 25% / 16.67%; padding: 0; border: 1px solid var(--global-border-color); }
 .profile-main .author__name { margin-top: 1rem; font-size: 1rem; line-height: 1.4; }
 .profile-main .author__bio { margin-top: .7rem; }
 .profile-main .author__urls { font-size: .75rem; }
@@ -52,7 +52,7 @@ html[data-theme="dark"] .profile-content a { color: #89d4e4; }
 @media (max-width: 1023px) {
   #main.profile-main { grid-template-columns: 1fr; gap: 2rem; margin-top: 1.5rem; }
   .profile-main > .sidebar { position: static; max-height: none; overflow: visible; padding-bottom: 1.5rem !important; border-bottom: 1px solid var(--global-border-color); }
-  .profile-main .author__avatar img { width: 64px; height: 64px; max-width: 64px; }
+  .profile-main .author__avatar img { width: 64px; height: auto; max-width: 64px; }
   .profile-main .author__avatar { width: 64px; }
   .profile-main .author__name { margin-top: 0; }
 }
