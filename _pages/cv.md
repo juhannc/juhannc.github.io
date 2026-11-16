@@ -11,8 +11,8 @@ redirect_from:
 ---
 <header class="resume-header">
   <div>
-    <p class="resume-eyebrow">Curriculum Vitae</p>
-    <h1 id="profile-title">Johann Christensen</h1>
+    <p class="resume-eyebrow">Experience &amp; Qualifications</p>
+    <h1 id="profile-title">Curriculum Vitae</h1>
     <p class="resume-tagline">Expert for Safe AI Engineering <span aria-hidden="true">/</span> PhD Candidate</p>
     <p class="resume-intro">Developing resilient AI systems for aviation, with a focus on Safety-by-Design, operational design domains, and the path to certification.</p>
   </div>
