@@ -17,3 +17,6 @@
 @media print{.organization-logo{break-inside:avoid}.review-card,.conference-service,.supervision-list>a,.paper-card{break-inside:avoid}}
 
 .organization-logo.berkeley-logo img{transform:scale(1.35)}
+/* Align organization marks with the name/role rather than the date above. */
+@media(min-width:1101px),(min-width:601px) and (max-width:900px){.journey-list .organization-logo{position:relative;top:18px}}
+@media(max-width:600px){.journey-list .organization-logo{position:relative;top:12px}}
