@@ -1,39 +1,41 @@
 ---
-layout: archive
+layout: profile
 title: "Publications"
 permalink: /publications/
+excerpt: "Research publications on safe AI for aviation, operational design domains, neural-network assurance, robotics, and autonomous control."
 author_profile: true
 ---
+<header class="profile-header">
+  <p class="profile-eyebrow">Research &amp; open-source software</p>
+  <h1 id="profile-title">Publications</h1>
+  <p class="profile-lead">Making AI safe for aviation.</p>
+  <p>My research spans operational design domains, neural-network assurance, collision avoidance, and certification-oriented AI engineering. Earlier work explores robotics, reinforcement learning, and autonomous control.</p>
+  <p class="profile-note">Accepted and forthcoming work is marked explicitly. Each entry includes a short overview, with full citations on the individual pages.</p>
+  <nav class="profile-actions" aria-label="Academic profiles">
+    <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
+    <a href="{{ site.author.orcid }}">ORCID <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
 
-<p>My research focuses on making AI safe for aviation: from defining and monitoring operational design domains to neural-network assurance, collision avoidance, and certification-oriented AI engineering. Earlier work explores robotics, reinforcement learning, and autonomous control.</p>
-<p>Each publication below includes a short overview and, where available, a link to the paper or software. Accepted and forthcoming work is marked explicitly.</p>
+{% assign publications = site.publications | sort: 'date' | reverse %}
+<nav class="publication-categories" aria-label="Publication categories">
+  {% for category in site.publication_category %}
+    {% assign entries = publications | where: 'category', category[0] %}
+    {% if entries.size > 0 %}<a href="#{{ category[0] }}">{{ category[1].title }} <span>{{ entries.size }}</span></a>{% endif %}
+  {% endfor %}
+</nav>
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on my <a href="{{site.author.orcid}}">ORCiD</a> or <a href="{{site.author.googlescholar}}">Google Scholar</a> profile.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+{% for category in site.publication_category %}
+  {% assign entries = publications | where: 'category', category[0] %}
+  {% if entries.size > 0 %}
+  <section class="profile-section publication-group" aria-labelledby="{{ category[0] }}">
+    <div class="profile-section-heading">
+      <h2 id="{{ category[0] }}">{{ category[1].title }}</h2>
+      <span class="publication-count">{{ entries.size }} {% if entries.size == 1 %}entry{% else %}entries{% endif %}</span>
+    </div>
+    {% for publication in entries %}
+      {% include publication-entry.html publication=publication %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+  </section>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
+<main id="main" class="profile-main">
+  {% include sidebar.html %}
+  <article class="profile-content" aria-labelledby="profile-title">
+    {{ content }}
+  </article>
+</main>

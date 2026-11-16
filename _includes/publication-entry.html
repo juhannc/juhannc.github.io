@@ -1,0 +1,16 @@
+<article class="publication-entry">
+  <p class="publication-meta">
+    <span>{{ include.publication.date | date: '%Y' }}</span>
+    {% if include.publication.publication_status %}<span class="publication-status">{{ include.publication.publication_status }}</span>{% endif %}
+    <span>{{ include.publication.venue }}</span>
+  </p>
+  <h3><a href="{{ include.publication.url | relative_url }}">{{ include.publication.title }}</a></h3>
+  <p class="publication-summary">{{ include.publication.excerpt | strip_html }}</p>
+  <div class="publication-links">
+    <a href="{{ include.publication.url | relative_url }}">Overview &amp; citation <span aria-hidden="true">↗</span></a>
+    {% if include.publication.paperurl %}
+      <a href="{{ include.publication.paperurl }}">{% if include.publication.category == 'software' %}Software{% else %}Paper{% endif %} <span aria-hidden="true">↗</span></a>
+    {% endif %}
+    {% if include.publication.slidesurl %}<a href="{{ include.publication.slidesurl }}">Slides <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+</article>

@@ -1,0 +1,39 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Johann Christensen
+
+> Johann Christensen is a researcher in Safe AI Engineering at the German Aerospace Center (DLR), with a focus on Safety-by-Design AI for aviation, operational design domains, neural-network assurance, and collision avoidance.
+
+His full publication name is Johann Maximilian Christensen. Earlier publications appear under Johann Lange. These names refer to the same person. He is based in Hamburg, Germany.
+
+He has been a Research Associate at DLR's Institute for AI Safety and Security since October 2023. He is a PhD (Dr.-Ing.) candidate in Safe AI Engineering at Ruhr University Bochum, supervised by Prof. Frank Köster, since October 2024; completion is expected in 2027. The doctorate is in progress.
+
+His research includes defining operational design domains (ODDs) from data; verifying ODD coverage and representativeness; combining neural networks with corrective lookup tables through Safety Nets; certification-oriented AI engineering and learning assurance; and guardrails for LLM-based support in air traffic control. He contributes to EUROCAE WG-114 on Artificial Intelligence.
+
+Previously, he was an AI and Robotics Engineer at ZAL Center of Applied Aeronautical Research (October 2019–August 2023), working on reinforcement learning, ROS-based robotic simulation, and MLOps. He holds an M.Sc. in Aircraft Systems Engineering from Hamburg University of Technology (October 2017–September 2019). His master's thesis at UC Berkeley's Hybrid Robotics Lab, supervised by Prof. Koushil Sreenath, concerned obstacle avoidance for safety-critical aerial robots.
+
+He received a Best of Session Paper Award at DASC 2024. Technical skills include Python, PyTorch, MLOps, and CI/CD. Languages: German (native), English (fluent, C2).
+
+Publication pages distinguish authored papers, research software, academic theses, preprints, and supervised theses. Supervision does not imply co-authorship. Accepted or forthcoming work is explicitly labeled and should retain that status when described. Research results and correctness guarantees apply to the systems and assumptions studied in the linked papers.
+
+## Profile and CV
+
+- [Homepage]({{ '/' | absolute_url }}): Research interests and professional background.
+- [Curriculum vitae]({{ '/cv/' | absolute_url }}): Experience, education, skills, award, and selected publications.
+- [Resume PDF]({{ '/files/CV.pdf' | absolute_url }}): Downloadable resume.
+- [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, paper links, and software releases.
+
+## Selected research
+
+{% assign selected_keys = 'Christensen2026,Christensen2026a,Christensen2025,Berro2025' | split: ',' %}
+{% for key in selected_keys %}{% assign publication = site.publications | where: 'bibkey', key | first %}{% if publication %}- [{{ publication.title }}]({{ publication.url | absolute_url }}): {{ publication.venue }}, {{ publication.date | date: '%Y' }}.{% if publication.publication_status %} {{ publication.publication_status }}.{% endif %} {{ publication.excerpt | strip_html }}
+{% endif %}{% endfor %}
+## Academic profiles and contact
+
+- [ORCID]({{ site.author.orcid }}): Persistent researcher identifier 0000-0001-9871-122X.
+- [Google Scholar]({{ site.author.googlescholar }}): Publications and citations.
+- [GitHub](https://github.com/juhannc): Public software and repositories.
+- [Email](mailto:{{ site.author.email }}): Professional contact.

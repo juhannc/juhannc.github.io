@@ -8,7 +8,7 @@ excerpt: An open-source implementation brings neural-network-based ACAS X collis
 date: '2024-10-28'
 venue: 2024 IEEE 36th International Conference on Tools with Artificial Intelligence (ICTAI)
 paperurl: https://doi.org/10.1109/ICTAI62512.2024.00017
-slidesurl: http://www.chrstnsn.de/files/2024-10-28-pyCASX-Handout.pdf
+slidesurl: https://www.chrstnsn.de/files/2024-10-28-ICTAI-pyCASX-Handout.pdf
 citation: <b>Johann Maximilian Christensen</b>, Akshay Anilkumar Girija, Thomas Stefani, Umut Durak, Elena Hoemann, Frank Köster, Thomas Krüger, Sven Hallerbach. &quot;Advancing the AI-Based Realization of ACAS X Towards Real-World Application&quot;. <i>2024 IEEE 36th International Conference on Tools with Artificial Intelligence (ICTAI)</i>, 2024.
 ---
 

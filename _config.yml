@@ -12,7 +12,7 @@ site_theme: "default"
 title: "Johann Christensen"
 title_separator: "-"
 name: &name "Johann Christensen"
-description: &description "Multidisciplinary AI researcher with a strong background in aircraft systems, (autonomous) flight control, and robotics. Pursuing my Ph. D. (Dr.-Ing.) at the Institute for AI Safety and Security at the German Aerospace Center. Proven problem-solving skills and the ability to familiarize myself quickly with new topics and tasks."
+description: &description "Johann Christensen researches Safety-by-Design AI for aviation at DLR, focusing on operational design domains, neural-network assurance, and certifiable AI systems."
 url: https://www.chrstnsn.de
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "juhannc/juhannc.github.io"
@@ -186,6 +186,7 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - _config_local.yml
   - package-lock.json
   - Gemfile.lock
   - docs
