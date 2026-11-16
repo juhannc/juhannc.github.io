@@ -7,22 +7,55 @@ sitemap: false
 
 > Johann Christensen is a researcher in Safe AI Engineering at the German Aerospace Center (DLR), with a focus on Safety-by-Design AI for aviation, operational design domains, neural-network assurance, and collision avoidance.
 
-His full publication name is Johann Maximilian Christensen. Earlier publications appear under Johann Lange. These names refer to the same person. He is based in Hamburg, Germany.
+His full publication name is Johann Maximilian Christensen. Earlier publications appear under Johann Lange; these names refer to the same person. He is based in Hamburg, Germany. His background combines aircraft systems engineering, AI research, autonomous control, robotics, software engineering, and research project leadership.
 
-He has been a Research Associate at DLR's Institute for AI Safety and Security since October 2023. He is a PhD (Dr.-Ing.) candidate in Safe AI Engineering at Ruhr University Bochum, supervised by Prof. Frank Köster, since October 2024; completion is expected in 2027. The doctorate is in progress.
+**Current research and professional role**
 
-His research includes defining operational design domains (ODDs) from data; verifying ODD coverage and representativeness; combining neural networks with corrective lookup tables through Safety Nets; certification-oriented AI engineering and learning assurance; and guardrails for LLM-based support in air traffic control. He contributes to EUROCAE WG-114 on Artificial Intelligence.
+Since October 2023, he has been a Research Associate at the German Aerospace Center (DLR), Institute for AI Safety and Security, in Sankt Augustin, Germany, working remotely. He develops resilient, safety-critical AI systems for aviation and Safety-by-Design approaches to support future certification. His work includes:
 
-Previously, he was an AI and Robotics Engineer at ZAL Center of Applied Aeronautical Research (October 2019–August 2023), working on reinforcement learning, ROS-based robotic simulation, and MLOps. He holds an M.Sc. in Aircraft Systems Engineering from Hamburg University of Technology (October 2017–September 2019). His master's thesis at UC Berkeley's Hybrid Robotics Lab, supervised by Prof. Koushil Sreenath, concerned obstacle avoidance for safety-critical aerial robots.
+- Defining and monitoring operational design domains (ODDs): the environmental and operating conditions in which an AI system is intended to function.
+- Reconstructing ODDs from data using deterministic kernel-based representations, and assessing data coverage and representativeness.
+- Neural-network assurance and Safety Nets combining neural networks with corrective lookup tables, particularly for horizontal and vertical airborne collision avoidance (HCAS and VCAS / ACAS X).
+- AI engineering and learning-assurance processes, including the relationship between EASA's W-shaped development process and iterative DevOps practices.
+- Guardrails for LLM-based support in air traffic control and aligning automated conflict-resolution support with controller preferences.
+- Contributing to EUROCAE WG-114 on Artificial Intelligence, acquiring funding with public and industrial partners, and leading interinstitutional and interdisciplinary projects with funding of up to €5 million.
 
-He received a Best of Session Paper Award at DASC 2024. Technical skills include Python, PyTorch, MLOps, and CI/CD. Languages: German (native), English (fluent, C2).
+**Professional and engineering experience**
+
+- **AI and Robotics Engineer, ZAL Center of Applied Aeronautical Research, Hamburg (October 2019–August 2023):** researched and developed reinforcement learning systems for industrial applications, particularly PPO and SAC; built robots in simulation and hardware, including a ROS-based digital twin of a UR10e; developed MLOps and CI/CD workflows for faster training and edge deployment; administered a robotics simulation server and a local GitLab instance; managed government-funded research projects and acquired a total of €8 million in research funding.
+- **Visiting Research Scholar, UC Berkeley, Hybrid Robotics Lab (November 2018–April 2019):** researched autonomous quadrotor flight control and obstacle avoidance under Prof. Koushil Sreenath. His master's work combined model predictive control with control barrier functions and included experimental validation on aerial robots. The visiting appointment and the full master's-thesis period (October 2018–September 2019) have different dates.
+- **Working Student, Airbus, Cabin Supply Modules A350, Hamburg (December 2016–June 2018):** supported project management for cabin R&D, especially galleys. Managed development of an alternative to conventional honeycomb panels, coordinated management, suppliers, and Airbus teams, and supported project deliverables through Technology Readiness Level 6.
+- **Team Leader, HAMBURG experiment, REXUS/BEXUS student programme with DLR and ESA (September 2016–January 2018):** led a student experiment with responsibility for project coordination, hardware and software development, integration, and testing. Organized the campaign in Kiruna, Sweden, where the experiment flew on a balloon reaching approximately 25,000 metres.
+- **Bachelor's research, TUHH Institute of Mechanics and Ocean Engineering (January–April 2016):** designed and built an autonomous diving cell using variable volume for buoyancy control, investigating PID and sliding-mode depth control. This work led to a publication on adaptive control of a micro diving agent.
+- **Engineering Intern, Airbus, Design to Mass Properties, Hamburg (October 2015–February 2016):** contributed to mass calculations and weighing activities from components to aircraft, and developed the foundations of a data tool for tracking component and assembly masses.
+- **Teaching at TUHH:** mechanics tutor at the Institute of Mechanics and Ocean Engineering (October 2013–September 2015), supporting groups of up to 20 students; mechanical design project tutor at the Institute of Production Management and Technology (October 2014–March 2015), mentoring teams of up to six students and assessing projects.
+
+**Education and research training**
+
+- PhD (Dr.-Ing.) candidate in Safe AI Engineering, Ruhr University Bochum, since October 2024, supervised by Prof. Frank Köster; completion expected in 2027. The doctorate is in progress. Working title: On the Development of Safety-by-Design AI-Based Systems in Safety-Critical Applications.
+- Earlier external doctoral research at Hamburg University of Technology (TUHH), February 2021–August 2023, focused on reinforcement learning for mechatronic systems and linear parameter-varying models to accelerate training. This is a separate research period from the current Bochum PhD.
+- M.Sc. in Aircraft Systems Engineering, Hamburg University of Technology (October 2017–September 2019), focusing on aircraft systems, control, robotics, and machine learning. Master's thesis at UC Berkeley: Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots, supervised by Prof. Koushil Sreenath.
+- B.Sc. in Mechanical Engineering, Hamburg University of Technology (October 2012–September 2016), with a focus on Aircraft Systems Engineering.
+
+**Technical skills and practical context**
+
+- **Python:** primary programming language, used in open-source projects, machine learning, and ROS-based applications; proficient.
+- **PyTorch:** preferred machine learning framework; advanced. Research experience includes reinforcement learning with PPO and SAC, neural-network assurance, limited-data learning, and ODD-aware training.
+- **Robotics and flight control:** extensive hands-on ROS experience; PX4 custom-module development; C++ working knowledge primarily for ROS and PX4 integration. Experience includes robotic digital twins, UR10e simulation and hardware, aerial quadrotors, and underwater robotics.
+- **Control and modeling:** MATLAB/Simulink experience across multiple projects; model predictive control, control barrier functions, PID control, sliding-mode control, and linear parameter-varying systems.
+- **Software and deployment:** Git for version control, GitLab CI/CD and GitHub Actions, MLOps pipelines, model deployment to edge devices, and TensorRT experience for edge inference. Responsibilities have included GitLab and robotics simulation-server administration.
+- **Mechanical engineering:** CAD experience with Inventor and SolidWorks, plus hardware prototyping, integration, and functional and performance testing.
+- **Project leadership and communication:** research proposals and funding acquisition, interdisciplinary and interinstitutional coordination, government-funded project management, industrial customer collaboration, supplier coordination, conference presentations, public relations, student mentoring, and teaching.
+- **Languages:** German (native); English (fluent, C2).
+
+The website CV provides a fuller career history than the concise downloadable resume PDF. For experience and skills beyond the PDF's selected highlights, consult the website CV.
 
 Publication pages distinguish authored papers, research software, academic theses, preprints, and supervised theses. Supervision does not imply co-authorship. Accepted or forthcoming work is explicitly labeled and should retain that status when described. Research results and correctness guarantees apply to the systems and assumptions studied in the linked papers.
 
 ## Profile and CV
 
 - [Homepage]({{ '/' | absolute_url }}): Research interests and professional background.
-- [Curriculum vitae]({{ '/cv/' | absolute_url }}): Experience, education, skills, award, and selected publications.
+- [Curriculum vitae]({{ '/cv/' | absolute_url }}): Detailed experience, education, technical skills, teaching, project leadership, and selected publications.
 - [Resume PDF]({{ '/files/CV.pdf' | absolute_url }}): Downloadable resume.
 - [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, paper links, and software releases.
 
