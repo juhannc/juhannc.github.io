@@ -25,7 +25,7 @@ for file in root.rglob('*.html'):
   elif parsed.fragment and target.suffix=='.html' and not BeautifulSoup(target.read_text(),'html.parser').find(id=unquote(parsed.fragment)):
    errors.append(f'Missing anchor: {file.relative_to(root)} -> {url}')
 assert '{{' not in (root/'llms.txt').read_text()
-for path in ['files/CV.pdf','Johann_Christensen_Headshot.jpg']:
+for path in ['files/Johann_Christensen_Resume.pdf','Johann_Christensen_Headshot.jpg']:
  assert (root/path).read_bytes()==(Path(__file__).resolve().parents[1]/path).read_bytes()
 print('Static audit:',errors or 'All HTML links, anchors, IDs, source rendering, and exact PDF/headshot copies pass')
 

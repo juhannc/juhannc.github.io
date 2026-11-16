@@ -23,7 +23,7 @@ author_profile: true
 <section class="profile-section" aria-labelledby="resources">
   <h2 id="resources">Downloads &amp; Machine-Readable Information</h2>
   <ul class="sitemap-links">
-    <li><a href="{{ '/files/CV.pdf' | relative_url }}">Resume PDF</a></li>
+    <li><a href="{{ '/files/Johann_Christensen_Resume.pdf' | relative_url }}">Resume PDF</a></li>
     <li><a href="{{ '/llms.txt' | relative_url }}">Profile for LLMs (llms.txt)</a></li>
     <li><a href="{{ '/sitemap.xml' | relative_url }}">XML Sitemap</a></li>
   </ul>

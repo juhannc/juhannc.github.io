@@ -93,7 +93,7 @@ def build(out):
     render('404.html', '/404.html', 'Page Not Found', '')
     shutil.copytree(HERE / 'assets', out / 'assets', dirs_exist_ok=True)
     shutil.copytree(ROOT / 'images', out / 'images', dirs_exist_ok=True)
-    resources = ['Johann_Christensen_Headshot.jpg', 'files/CV.pdf',
+    resources = ['Johann_Christensen_Headshot.jpg', 'files/Johann_Christensen_Resume.pdf',
                  'files/2024-09-29-DASC-SafetyNet-Handout.pdf', 'files/2024-10-28-ICTAI-pyCASX-Handout.pdf']
     for f in resources:
         target = out / f

@@ -58,7 +58,7 @@ Publication pages distinguish authored papers, academic theses, preprints, and s
 
 - [Homepage]({{ '/' | absolute_url }}): Research interests and professional background.
 - [Curriculum vitae]({{ '/cv/' | absolute_url }}): Detailed experience, education, technical skills, teaching, project leadership, and selected publications.
-- [Resume PDF]({{ '/files/CV.pdf' | absolute_url }}): Downloadable resume.
+- [Resume PDF]({{ '/files/Johann_Christensen_Resume.pdf' | absolute_url }}): Downloadable resume.
 - [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, and paper links.
 
 ## Selected Research
