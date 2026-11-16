@@ -7,3 +7,7 @@
 {% if page.collection == 'publications' and site.data.citations[page.bibkey] %}
 <script defer src="{{ '/assets/js/citation-tabs.js' | relative_url }}"></script>
 {% endif %}
+
+{% if page.layout == 'resume' %}
+<script defer src="{{ '/assets/js/resume-tabs.js' | relative_url }}"></script>
+{% endif %}

@@ -24,17 +24,17 @@ redirect_from:
   <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download resume <span>PDF ↗</span></a>
 </header>
 
-<nav class="resume-sections" aria-label="CV sections">
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#expertise">Technical skills</a>
-  <a href="#project-leadership">Leadership</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#selected-publications">Publications</a>
-</nav>
-
-<div class="resume-grid">
-  <div class="resume-primary">
+<div data-resume-tabs>
+  <nav class="resume-sections" aria-label="CV sections">
+    <a id="resume-tab-experience" href="#experience" data-resume-tab="experience">Experience</a>
+    <a id="resume-tab-education" href="#education" data-resume-tab="education">Education</a>
+    <a id="resume-tab-expertise" href="#expertise" data-resume-tab="expertise">Technical skills</a>
+    <a id="resume-tab-project-leadership" href="#project-leadership" data-resume-tab="project-leadership">Leadership</a>
+    <a id="resume-tab-teaching" href="#teaching" data-resume-tab="teaching">Teaching</a>
+    <a id="resume-tab-selected-publications" href="#selected-publications" data-resume-tab="selected-publications">Publications</a>
+  </nav>
+  <div class="resume-panels">
+    <div id="resume-panel-experience" class="resume-tab-panel" data-resume-panel="experience">
     <section aria-labelledby="experience">
       <h2 id="experience">Experience</h2>
       <article class="resume-entry">
@@ -88,63 +88,9 @@ redirect_from:
           <li>Organized the campaign in Kiruna, Sweden, where the experiment was tested and flown on a balloon reaching approximately 25,000 metres.</li>
         </ul>
       </article>
-      <article class="resume-entry">
-        <p class="resume-date">January – April 2016 <span>Hamburg, Germany</span></p>
-        <h3>Bachelor’s Research · Autonomous Diving Cell</h3>
-        <p class="resume-organization">Institute of Mechanics and Ocean Engineering · TUHH</p>
-        <ul>
-          <li>Designed and built an autonomous diving cell using variable volume to control buoyancy.</li>
-          <li>Investigated PID and sliding-mode depth control; the work led to a publication on adaptive control of a micro diving agent.</li>
-        </ul>
-      </article>
-      <article class="resume-entry">
-        <p class="resume-date">October 2015 – February 2016 <span>Hamburg, Germany</span></p>
-        <h3>Engineering Intern · Design to Mass Properties</h3>
-        <p class="resume-organization">Airbus</p>
-        <ul>
-          <li>Contributed to mass calculations and weighing activities, from individual components to aircraft.</li>
-          <li>Developed the foundations of a data tool to track changes in component and assembly masses.</li>
-        </ul>
-      </article>
     </section>
-
-    <section aria-labelledby="teaching">
-      <h2 id="teaching">Teaching &amp; mentoring</h2>
-      <article class="resume-entry">
-        <p class="resume-date">October 2013 – September 2015</p>
-        <h3>Mechanics Tutor</h3>
-        <p class="resume-organization">Institute of Mechanics and Ocean Engineering · TUHH</p>
-        <p>Supported groups of up to 20 students with mechanics assignments.</p>
-      </article>
-      <article class="resume-entry">
-        <p class="resume-date">October 2014 – March 2015</p>
-        <h3>Mechanical Design Project Tutor</h3>
-        <p class="resume-organization">Institute of Production Management and Technology · TUHH</p>
-        <p>Mentored teams of up to six students and assessed their design projects.</p>
-      </article>
-    </section>
-
-    <section aria-labelledby="selected-publications">
-      <div class="resume-section-heading">
-        <h2 id="selected-publications">Selected publications</h2>
-        <a href="{{ '/publications/' | relative_url }}">All publications ↗</a>
-      </div>
-      {% assign selected_keys = 'Christensen2026,Christensen2025,Berro2025,Christensen2024' | split: ',' %}
-      <ol class="resume-publications">
-        {% for key in selected_keys %}
-          {% assign publication = site.publications | where: 'bibkey', key | first %}
-          {% if publication %}
-          <li>
-            <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
-            <p>{{ publication.venue }} · {{ publication.date | date: '%Y' }}{% if publication.publication_status %} · {{ publication.publication_status }}{% endif %}</p>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-    </section>
-  </div>
-
-  <div class="resume-secondary">
+    </div>
+    <div id="resume-panel-education" class="resume-tab-panel" data-resume-panel="education">
     <section aria-labelledby="education">
       <h2 id="education">Education</h2>
       <article class="resume-entry">
@@ -178,7 +124,8 @@ redirect_from:
         <p>Focus on Aircraft Systems Engineering.</p>
       </article>
     </section>
-
+    </div>
+    <div id="resume-panel-expertise" class="resume-tab-panel" data-resume-panel="expertise">
     <section aria-labelledby="expertise">
       <h2 id="expertise">Technical skills</h2>
       <dl class="resume-skill-groups">
@@ -188,12 +135,6 @@ redirect_from:
         <div><dt>Mechanical engineering</dt><dd>Inventor, SolidWorks, hardware prototyping, integration, and experimental testing.</dd></div>
       </dl>
     </section>
-
-    <section aria-labelledby="project-leadership">
-      <h2 id="project-leadership">Project leadership</h2>
-      <p>Research proposals and funding acquisition; interdisciplinary project management; coordination with industrial partners and suppliers; conference presentations; and student mentoring.</p>
-    </section>
-
     <section aria-labelledby="languages">
       <h2 id="languages">Languages</h2>
       <dl class="resume-skills">
@@ -201,5 +142,49 @@ redirect_from:
         <div><dt>English</dt><dd>Fluent · C2</dd></div>
       </dl>
     </section>
+    </div>
+    <div id="resume-panel-project-leadership" class="resume-tab-panel" data-resume-panel="project-leadership">
+    <section aria-labelledby="project-leadership">
+      <h2 id="project-leadership">Project leadership</h2>
+      <p>Research proposals and funding acquisition; interdisciplinary project management; coordination with industrial partners and suppliers; conference presentations; and student mentoring.</p>
+    </section>
+    </div>
+    <div id="resume-panel-teaching" class="resume-tab-panel" data-resume-panel="teaching">
+    <section aria-labelledby="teaching">
+      <h2 id="teaching">Teaching &amp; mentoring</h2>
+      <article class="resume-entry">
+        <p class="resume-date">October 2013 – September 2015</p>
+        <h3>Mechanics Tutor</h3>
+        <p class="resume-organization">Institute of Mechanics and Ocean Engineering · TUHH</p>
+        <p>Supported groups of up to 20 students with mechanics assignments.</p>
+      </article>
+      <article class="resume-entry">
+        <p class="resume-date">October 2014 – March 2015</p>
+        <h3>Mechanical Design Project Tutor</h3>
+        <p class="resume-organization">Institute of Production Management and Technology · TUHH</p>
+        <p>Mentored teams of up to six students and assessed their design projects.</p>
+      </article>
+    </section>
+    </div>
+    <div id="resume-panel-selected-publications" class="resume-tab-panel" data-resume-panel="selected-publications">
+    <section aria-labelledby="selected-publications">
+      <div class="resume-section-heading">
+        <h2 id="selected-publications">Selected publications</h2>
+        <a href="{{ '/publications/' | relative_url }}">All publications ↗</a>
+      </div>
+      {% assign selected_keys = 'Christensen2026,Christensen2025,Berro2025,Christensen2024' | split: ',' %}
+      <ol class="resume-publications">
+        {% for key in selected_keys %}
+          {% assign publication = site.publications | where: 'bibkey', key | first %}
+          {% if publication %}
+          <li>
+            <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+            <p>{{ publication.venue }} · {{ publication.date | date: '%Y' }}{% if publication.publication_status %} · {{ publication.publication_status }}{% endif %}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+    </div>
   </div>
 </div>

@@ -17,7 +17,14 @@
 .resume-sections a { padding: .4rem .75rem; border: 1px solid var(--global-border-color); border-radius: .25rem; text-decoration: none; }
 .resume-sections a:hover { border-color: var(--global-base-color); }
 .resume h2[id] { scroll-margin-top: 6rem; }
-.resume-grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 3.5rem; padding-top: 2.5rem; }
+.resume-sections[role="tablist"] { gap: .25rem; border-bottom: 1px solid var(--global-border-color); }
+.resume .resume-sections [role="tab"] { border: 0; border-bottom: 3px solid transparent; border-radius: 0; padding: .65rem 1rem; color: var(--global-text-color); }
+.resume-sections [role="tab"][aria-selected="true"] { border-bottom-color: var(--global-base-color); font-weight: 700; }
+.resume-sections [role="tab"]:hover { background: var(--global-footer-bg-color); }
+.resume-tab-panel { max-width: 52rem; padding-top: 2rem; }
+.resume-tab-panel[hidden] { display: none !important; }
+.resume-tab-panel:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: .5rem; }
+
 .resume section + section { margin-top: 2.5rem; }
 .resume h2 { margin: 0 0 1.3rem; padding-bottom: .65rem; border-bottom: 1px solid var(--global-border-color); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
 .resume h3 { margin: 0 0 .3rem; font-size: 1.05rem; line-height: 1.4; }
@@ -28,8 +35,6 @@
 .resume-entry ul { margin: .85rem 0 0; padding-left: 1.1rem; }
 .resume-entry li + li { margin-top: .5rem; }
 .resume-detail { font-size: .75rem; }
-.resume-secondary { padding-left: 1.8rem; border-left: 1px solid var(--global-border-color); font-size: .8rem; }
-.resume-secondary h3 { font-size: .9rem; }
 .resume-section-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.3rem; border-bottom: 1px solid var(--global-border-color); }
 .resume-section-heading h2 { border: 0; margin-bottom: 0; }
 .resume-section-heading > a { font-size: .7rem; }
@@ -49,15 +54,13 @@
   #main.resume-main { padding: 1.5rem 1rem 3rem; }
   .resume-header { flex-direction: column; gap: 1.2rem; }
   .resume-download { flex-direction: row; align-items: center; gap: 1rem; }
-  .resume-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .resume-secondary { padding-left: 0; border-left: 0; }
 }
 @media print {
   .masthead, .page__footer, .resume-download, .resume-contact, .resume-sections { display: none !important; }
   #main.resume-main { padding: 0; margin: 0; max-width: none; }
   .resume { font-size: 10pt; color: #222; }
   .resume-header { padding-bottom: 1rem; }
-  .resume-grid { grid-template-columns: 1.7fr 1fr; gap: 1.5rem; padding-top: 1rem; }
+  .resume-tab-panel, .resume-tab-panel[hidden] { display: block !important; max-width: none; padding-top: 1.5rem; }
   .resume-entry, .resume-publications li { break-inside: avoid; }
   .resume h2, .resume h3 { break-after: avoid; }
   .resume a { color: inherit; text-decoration: none; }
