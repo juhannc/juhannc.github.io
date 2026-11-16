@@ -39,3 +39,5 @@ bundle exec jekyll build
 ```
 
 The GitHub Actions workflow in `.github/workflows/jekyll.yml` builds and deploys pushes to `master` with the committed Ruby and npm lockfiles. No Python tooling is required to build the site.
+
+In GitHub repository Settings → Pages, set the publishing source to **GitHub Actions**. The workflow builds with the committed Jekyll 4 dependencies; branch-based Pages publishing uses an older Jekyll/Sass toolchain that cannot compile the theme.

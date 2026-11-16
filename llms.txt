@@ -50,14 +50,14 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 
 The website CV provides a fuller career history than the concise downloadable resume PDF. For experience and skills beyond the PDF's selected highlights, consult the website CV.
 
-Publication pages distinguish authored papers, research software, academic theses, preprints, and supervised theses. Supervision does not imply co-authorship. Accepted or forthcoming work is explicitly labeled and should retain that status when described. Research results and correctness guarantees apply to the systems and assumptions studied in the linked papers.
+Publication pages distinguish authored papers, academic theses, preprints, and supervised theses. Supervision does not imply co-authorship. Accepted or forthcoming work is explicitly labeled and should retain that status when described. Research results and correctness guarantees apply to the systems and assumptions studied in the linked papers.
 
 ## Profile and CV
 
 - [Homepage]({{ '/' | absolute_url }}): Research interests and professional background.
 - [Curriculum vitae]({{ '/cv/' | absolute_url }}): Detailed experience, education, technical skills, teaching, project leadership, and selected publications.
 - [Resume PDF]({{ '/files/CV.pdf' | absolute_url }}): Downloadable resume.
-- [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, paper links, and software releases.
+- [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, and paper links.
 
 ## Selected Research
 

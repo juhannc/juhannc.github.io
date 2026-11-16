@@ -84,8 +84,6 @@ publication_category:
     title: "Journal Articles"
   conferences:
     title: "Conference Papers"
-  software:
-    title: "Research Software"
   academic:
     title: "Academic Theses"
   preprints:
