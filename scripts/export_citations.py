@@ -41,9 +41,6 @@ def serialize(entry_type, key, fields):
     for name, value in fields.items():
         if not value:
             continue
-        # Protect title capitalization, including AI, ACAS, and ODD.
-        if name == 'title':
-            value = '{' + value + '}'
         if name == 'month' and value in MONTHS:
             lines.append(f'  {name} = {value},')
         else:

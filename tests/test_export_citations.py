@@ -19,7 +19,8 @@ class CitationExportTests(unittest.TestCase):
         self.assertIn('year = {2026}', result['bibtex'])
         self.assertIn('month = sep', result['bibtex'])
         self.assertIn('journal = {Journal}', result['bibtex'])
-        self.assertIn('title = {{AI in Aviation}}', result['bibtex'])
+        self.assertIn('title = {AI in Aviation},', result['bibtex'])
+        self.assertIn('title = {AI in Aviation},', result['biblatex'])
         for value in result.values():
             self.assertNotIn('/private/', value)
             self.assertNotIn('Internal', value)
@@ -54,6 +55,7 @@ class CitationExportTests(unittest.TestCase):
             parsed = module.read_bibliography(text)
             self.assertIn(entry['ID'], parsed)
             self.assertEqual(parsed[entry['ID']]['author'], entry['author'])
+            self.assertEqual(parsed[entry['ID']]['title'], entry['title'])
             self.assertEqual(parsed[entry['ID']].get('booktitle'), entry['booktitle'])
 
 

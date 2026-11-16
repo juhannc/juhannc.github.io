@@ -42,6 +42,7 @@ html[data-theme="dark"] .profile-content a { color: #89d4e4; }
 .publication-entry h3 a { color: inherit; text-decoration: none; }
 .publication-entry h3 a:hover { text-decoration: underline; }
 .profile-content .publication-summary { margin-bottom: .85rem; font-size: .85rem; }
+.publication-group .publication-summary { font-size: 1rem; }
 .publication-links { display: flex; flex-wrap: wrap; gap: .4rem 1.3rem; font-size: .75rem; }
 .publication-categories { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; font-size: .7rem; }
 .publication-categories a { padding: .35rem .65rem; border: 1px solid var(--global-border-color); border-radius: .25rem; text-decoration: none; }

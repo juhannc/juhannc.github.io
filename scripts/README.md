@@ -39,5 +39,6 @@ python -m unittest discover -s tests -v
 BibLaTeX retains the source entry types and modern fields. Traditional BibTeX
 uses `year`/`month`, `journal`, and `school`; theses use `@mastersthesis` or
 `@phdthesis`, while online works and software use `@misc`. Publication status
-and software versions are retained in the BibTeX `note` field. Titles are
-protected against automatic case conversion in both formats.
+and software versions are retained in the BibTeX `note` field. Titles retain their source text without an added capitalization-protection
+brace layer. Existing source braces, including those used for accented names,
+are preserved.
