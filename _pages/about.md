@@ -10,28 +10,28 @@ redirect_from:
 ---
 <header class="profile-header">
   <p class="profile-eyebrow">Research · Engineering · Aviation</p>
-  <h1 id="profile-title">Engineering AI for <br>safety-critical systems.</h1>
+  <h1 id="profile-title">Engineering AI for <br>Safety-Critical Systems.</h1>
   <p class="profile-lead">I’m Johann, an AI expert and researcher developing safe, resilient AI for aviation at the German Aerospace Center (DLR).</p>
   <p>I develop Safety-by-Design approaches that connect AI research with the demands of aviation certification: understanding where a system can operate, verifying its behavior, and building the evidence needed to trust it.</p>
   <nav class="profile-actions" aria-label="Explore my work">
-    <a class="profile-button" href="{{ '/publications/' | relative_url }}">Explore publications <span aria-hidden="true">↗</span></a>
-    <a href="{{ '/cv/' | relative_url }}">View my CV <span aria-hidden="true">↗</span></a>
+    <a class="profile-button" href="{{ '/publications/' | relative_url }}">Explore Publications <span aria-hidden="true">↗</span></a>
+    <a href="{{ '/cv/' | relative_url }}">View My CV <span aria-hidden="true">↗</span></a>
   </nav>
 </header>
 
 <section class="profile-section" aria-labelledby="research-focus">
-  <h2 id="research-focus">Research focus</h2>
+  <h2 id="research-focus">Research Focus</h2>
   <dl class="research-areas">
     <div>
-      <dt>Operational design domains</dt>
+      <dt>Operational Design Domains</dt>
       <dd>Defining the conditions in which AI systems can operate, learning those boundaries from data, and assessing coverage and representativeness.</dd>
     </div>
     <div>
-      <dt>Neural-network assurance</dt>
+      <dt>Neural-Network Assurance</dt>
       <dd>Combining neural networks with Safety Nets to support reliable collision avoidance and a practical path toward certifiable AI.</dd>
     </div>
     <div>
-      <dt>AI engineering &amp; human–AI interaction</dt>
+      <dt>AI Engineering &amp; Human–AI Interaction</dt>
       <dd>Connecting learning assurance with iterative development, and developing guardrails for LLM-based support in air traffic control.</dd>
     </div>
   </dl>
@@ -46,8 +46,8 @@ redirect_from:
 
 <section class="profile-section" aria-labelledby="selected-research">
   <div class="profile-section-heading">
-    <h2 id="selected-research">Selected research</h2>
-    <a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a>
+    <h2 id="selected-research">Selected Research</h2>
+    <a href="{{ '/publications/' | relative_url }}">All Publications <span aria-hidden="true">↗</span></a>
   </div>
   {% assign selected_keys = 'Christensen2026,Christensen2026a,Christensen2025' | split: ',' %}
   {% for key in selected_keys %}

@@ -7,7 +7,7 @@
   <h3><a href="{{ include.publication.url | relative_url }}">{{ include.publication.title }}</a></h3>
   <p class="publication-summary">{{ include.publication.excerpt | strip_html }}</p>
   <div class="publication-links">
-    <a href="{{ include.publication.url | relative_url }}">Overview &amp; citation <span aria-hidden="true">↗</span></a>
+    <a href="{{ include.publication.url | relative_url }}">Overview &amp; Citation <span aria-hidden="true">↗</span></a>
     {% if include.publication.paperurl %}
       <a href="{{ include.publication.paperurl }}">{% if include.publication.category == 'software' %}Software{% else %}Paper{% endif %} <span aria-hidden="true">↗</span></a>
     {% endif %}

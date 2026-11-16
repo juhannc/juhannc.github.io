@@ -9,7 +9,7 @@ sitemap: false
 
 His full publication name is Johann Maximilian Christensen. Earlier publications appear under Johann Lange; these names refer to the same person. He is based in Hamburg, Germany. His background combines aircraft systems engineering, AI research, autonomous control, robotics, software engineering, and research project leadership.
 
-**Current research and professional role**
+**Current Research and Professional Role**
 
 Since October 2023, he has been a Research Associate at the German Aerospace Center (DLR), Institute for AI Safety and Security, in Sankt Augustin, Germany, working remotely. He develops resilient, safety-critical AI systems for aviation and Safety-by-Design approaches to support future certification. His work includes:
 
@@ -20,7 +20,7 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 - Guardrails for LLM-based support in air traffic control and aligning automated conflict-resolution support with controller preferences.
 - Contributing to EUROCAE WG-114 on Artificial Intelligence, acquiring funding with public and industrial partners, and leading interinstitutional and interdisciplinary projects with funding of up to €5 million.
 
-**Professional and engineering experience**
+**Professional and Engineering Experience**
 
 - **AI and Robotics Engineer, ZAL Center of Applied Aeronautical Research, Hamburg (October 2019–August 2023):** researched and developed reinforcement learning systems for industrial applications, particularly PPO and SAC; built robots in simulation and hardware, including a ROS-based digital twin of a UR10e; developed MLOps and CI/CD workflows for faster training and edge deployment; administered a robotics simulation server and a local GitLab instance; managed government-funded research projects and acquired a total of €8 million in research funding.
 - **Visiting Research Scholar, UC Berkeley, Hybrid Robotics Lab (November 2018–April 2019):** researched autonomous quadrotor flight control and obstacle avoidance under Prof. Koushil Sreenath. His master's work combined model predictive control with control barrier functions and included experimental validation on aerial robots. The visiting appointment and the full master's-thesis period (October 2018–September 2019) have different dates.
@@ -30,14 +30,14 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 - **Engineering Intern, Airbus, Design to Mass Properties, Hamburg (October 2015–February 2016):** contributed to mass calculations and weighing activities from components to aircraft, and developed the foundations of a data tool for tracking component and assembly masses.
 - **Teaching at TUHH:** mechanics tutor at the Institute of Mechanics and Ocean Engineering (October 2013–September 2015), supporting groups of up to 20 students; mechanical design project tutor at the Institute of Production Management and Technology (October 2014–March 2015), mentoring teams of up to six students and assessing projects.
 
-**Education and research training**
+**Education and Research Training**
 
 - PhD (Dr.-Ing.) candidate in Safe AI Engineering, Ruhr University Bochum, since October 2024, supervised by Prof. Frank Köster; completion expected in 2027. The doctorate is in progress. Working title: On the Development of Safety-by-Design AI-Based Systems in Safety-Critical Applications.
 - Earlier external doctoral research at Hamburg University of Technology (TUHH), February 2021–August 2023, focused on reinforcement learning for mechatronic systems and linear parameter-varying models to accelerate training. This is a separate research period from the current Bochum PhD.
 - M.Sc. in Aircraft Systems Engineering, Hamburg University of Technology (October 2017–September 2019), focusing on aircraft systems, control, robotics, and machine learning. Master's thesis at UC Berkeley: Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots, supervised by Prof. Koushil Sreenath.
 - B.Sc. in Mechanical Engineering, Hamburg University of Technology (October 2012–September 2016), with a focus on Aircraft Systems Engineering.
 
-**Technical skills and practical context**
+**Technical Skills and Practical Context**
 
 - **Python:** primary programming language, used in open-source projects, machine learning, and ROS-based applications; proficient.
 - **PyTorch:** preferred machine learning framework; advanced. Research experience includes reinforcement learning with PPO and SAC, neural-network assurance, limited-data learning, and ODD-aware training.
@@ -59,12 +59,12 @@ Publication pages distinguish authored papers, research software, academic these
 - [Resume PDF]({{ '/files/CV.pdf' | absolute_url }}): Downloadable resume.
 - [Publications]({{ '/publications/' | absolute_url }}): Complete publication list, summaries, citations, paper links, and software releases.
 
-## Selected research
+## Selected Research
 
 {% assign selected_keys = 'Christensen2026,Christensen2026a,Christensen2025,Berro2025' | split: ',' %}
 {% for key in selected_keys %}{% assign publication = site.publications | where: 'bibkey', key | first %}{% if publication %}- [{{ publication.title }}]({{ publication.url | absolute_url }}): {{ publication.venue }}, {{ publication.date | date: '%Y' }}.{% if publication.publication_status %} {{ publication.publication_status }}.{% endif %} {{ publication.excerpt | strip_html }}
 {% endif %}{% endfor %}
-## Academic profiles and contact
+## Academic Profiles and Contact
 
 - [ORCID]({{ site.author.orcid }}): Persistent researcher identifier 0000-0001-9871-122X.
 - [Google Scholar]({{ site.author.googlescholar }}): Publications and citations.

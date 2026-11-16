@@ -1,7 +1,7 @@
 /* Resume styles use the active Academic Pages theme in light and dark modes. */
 .resume { color: var(--global-text-color); font-size: .9rem; line-height: 1.65; }
 .resume-header { padding-bottom: 2rem; border-bottom: 3px solid var(--global-base-color); }
-.resume-eyebrow { margin: 0 0 .65rem; font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; color: var(--global-text-color); }
+.resume-eyebrow { margin: 0 0 .65rem; font-size: .7rem; letter-spacing: .15em; text-transform: none; font-weight: 700; color: var(--global-text-color); }
 .resume h1 { margin: 0 0 .45rem; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.12; letter-spacing: -.04em; }
 .resume-tagline { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
 .resume-tagline span { padding-inline: .4rem; color: var(--global-base-color); }
@@ -24,7 +24,7 @@
 .resume-tab-panel:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: .5rem; }
 
 .resume section + section { margin-top: 2.5rem; }
-.resume h2 { margin: 0 0 1.3rem; padding-bottom: .65rem; border-bottom: 1px solid var(--global-border-color); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+.resume h2 { margin: 0 0 1.3rem; padding-bottom: .65rem; border-bottom: 1px solid var(--global-border-color); font-size: .78rem; letter-spacing: .12em; text-transform: none; }
 .resume h3 { margin: 0 0 .3rem; font-size: 1.05rem; line-height: 1.4; }
 .resume-entry + .resume-entry { margin-top: 1.8rem; }
 .resume-entry p { margin: .3rem 0; }

@@ -11,12 +11,12 @@ redirect_from:
 ---
 <header class="resume-header">
   <div>
-    <p class="resume-eyebrow">Curriculum vitae</p>
+    <p class="resume-eyebrow">Curriculum Vitae</p>
     <h1 id="profile-title">Johann Christensen</h1>
     <p class="resume-tagline">Expert for Safe AI Engineering <span aria-hidden="true">/</span> PhD Candidate</p>
     <p class="resume-intro">Developing resilient AI systems for aviation, with a focus on Safety-by-Design, operational design domains, and the path to certification.</p>
   </div>
-  <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download resume <span>PDF ↗</span></a>
+  <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download Resume <span>PDF ↗</span></a>
 </header>
 
 <div data-resume-tabs>
@@ -76,7 +76,7 @@ redirect_from:
       <article class="resume-entry">
         <p class="resume-date">September 2016 – January 2018 <span>Germany &amp; Sweden</span></p>
         <h3>Team Leader · HAMBURG Experiment</h3>
-        <p class="resume-organization">REXUS/BEXUS student programme · DLR &amp; ESA</p>
+        <p class="resume-organization">REXUS/BEXUS Student Programme · DLR &amp; ESA</p>
         <ul>
           <li>Led the student experiment, with responsibility for project coordination, hardware and software development, integration, and testing.</li>
           <li>Organized the campaign in Kiruna, Sweden, where the experiment was tested and flown on a balloon reaching approximately 25,000 metres.</li>
@@ -105,7 +105,7 @@ redirect_from:
         <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
         <p class="resume-date">October 2017 – September 2019</p>
         <div class="resume-thesis">
-          <h4>Master’s thesis · M.Sc. component</h4>
+          <h4>Master’s Thesis · M.Sc. Component</h4>
           <p class="resume-organization">Hybrid Robotics Lab · University of California, Berkeley</p>
           <p class="resume-date">October 2018 – September 2019</p>
           <p>Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots</p>
@@ -118,10 +118,10 @@ redirect_from:
     <section aria-labelledby="expertise">
       <h2 id="expertise">Skills</h2>
       <dl class="resume-skill-groups">
-        <div><dt>AI &amp; machine learning</dt><dd>Python, PyTorch, reinforcement learning (PPO, SAC), MLOps, and neural-network assurance.</dd></div>
-        <div><dt>Robotics &amp; control</dt><dd>ROS, PX4, C++ for robotics and flight-control integration, MATLAB/Simulink, model predictive control, and control barrier functions.</dd></div>
-        <div><dt>Software &amp; deployment</dt><dd>Git, GitLab CI/CD, GitHub Actions, TensorRT, and deployment of trained models to edge devices.</dd></div>
-        <div><dt>Mechanical engineering</dt><dd>Inventor, SolidWorks, hardware prototyping, integration, and experimental testing.</dd></div>
+        <div><dt>AI &amp; Machine Learning</dt><dd>Python, PyTorch, reinforcement learning (PPO, SAC), MLOps, and neural-network assurance.</dd></div>
+        <div><dt>Robotics &amp; Control</dt><dd>ROS, PX4, C++ for robotics and flight-control integration, MATLAB/Simulink, model predictive control, and control barrier functions.</dd></div>
+        <div><dt>Software &amp; Deployment</dt><dd>Git, GitLab CI/CD, GitHub Actions, TensorRT, and deployment of trained models to edge devices.</dd></div>
+        <div><dt>Mechanical Engineering</dt><dd>Inventor, SolidWorks, hardware prototyping, integration, and experimental testing.</dd></div>
       </dl>
     </section>
     <section aria-labelledby="languages">
@@ -134,7 +134,7 @@ redirect_from:
     </div>
     <div id="resume-panel-teaching" class="resume-tab-panel" data-resume-panel="teaching">
     <section aria-labelledby="teaching">
-      <h2 id="teaching">Teaching &amp; mentoring</h2>
+      <h2 id="teaching">Teaching &amp; Mentoring</h2>
       <article class="resume-entry">
         <p class="resume-date">October 2013 – September 2015</p>
         <h3>Mechanics Tutor</h3>
@@ -152,8 +152,8 @@ redirect_from:
     <div id="resume-panel-selected-publications" class="resume-tab-panel" data-resume-panel="selected-publications">
     <section aria-labelledby="selected-publications">
       <div class="resume-section-heading">
-        <h2 id="selected-publications">Selected publications</h2>
-        <a href="{{ '/publications/' | relative_url }}">All publications ↗</a>
+        <h2 id="selected-publications">Selected Publications</h2>
+        <a href="{{ '/publications/' | relative_url }}">All Publications ↗</a>
       </div>
       {% assign selected_keys = 'Christensen2026,Christensen2025,Berro2025,Christensen2024' | split: ',' %}
       <ol class="resume-publications">

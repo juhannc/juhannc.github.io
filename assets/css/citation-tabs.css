@@ -1,6 +1,6 @@
 .page__content .recommended-citation { font-size: .85rem; line-height: 1.6; }
 .citation-widget { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid var(--global-base-color); min-width: 0; }
-.citation-widget h2 { margin-top: 0; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; }
+.citation-widget h2 { margin-top: 0; font-size: .85rem; letter-spacing: .1em; text-transform: none; }
 .citation-tabs { display: flex; gap: .25rem; border-bottom: 1px solid var(--global-border-color); }
 .citation-widget [hidden] { display: none !important; }
 .citation-tabs button { padding: .65rem 1rem; background: transparent; border: 0; border-bottom: 3px solid transparent; color: var(--global-text-color); font: inherit; font-size: .8rem; cursor: pointer; }
