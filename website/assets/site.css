@@ -23,3 +23,5 @@
 
 .theme-toggle{display:flex;align-items:center;justify-content:center}.theme-toggle svg{width:17px;height:17px;flex-shrink:0}
 @media(max-width:600px){.identity-links{grid-column:1/-1;grid-row:2;margin-top:0}.social{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px}.social a{white-space:nowrap}}
+
+.workshop-note{font-size:12px;color:var(--teal);margin:0 0 15px}.workshop-note a{text-decoration:underline;text-underline-offset:3px}.workshop-acceptances{padding:25px;background:var(--sidebar);border-radius:9px;margin-top:28px}.workshop-acceptances h2{font-size:22px;margin-bottom:12px}.workshop-acceptances>p{font-size:13px;color:var(--muted)}.workshop-acceptances ul{list-style:none;padding:0;margin:0}.workshop-acceptances li+li{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}.workshop-acceptances li a{font-size:14px;font-weight:600;line-height:1.6}.workshop-acceptances li span{display:block;font-size:11px;color:var(--muted);margin-top:7px}

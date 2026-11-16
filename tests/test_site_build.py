@@ -33,4 +33,12 @@ class SiteBuildTests(unittest.TestCase):
    a=page.find('a',string=lambda x:x and 'Talk Handout' in x)
    self.assertIsNotNone(a)
    self.assertTrue((self.out/a['href'].lstrip('/')).read_bytes().startswith(b'%PDF-'))
+ def test_neurips_workshop_acceptances(self):
+  page=self.soup('publication/2026-12-06-Defining-Operational-Conditions-for-Safety-Critical-AI-Based-Systems-from-Data/index.html')
+  section=page.select_one('.workshop-acceptances')
+  self.assertEqual(len(section.select('li')),2)
+  self.assertIn('Can We Trust AI Evaluation?',section.get_text())
+  self.assertIn('Is Physical AI Going Zero-Shot?',section.get_text())
+  self.assertIn('Sydney',section.get_text())
+  self.assertEqual(len(self.soup('publications/index.html').select('[data-paper]')),21)
 if __name__=='__main__':unittest.main()

@@ -80,3 +80,7 @@ Johann reviews for IEEE Transactions on Aerospace and Electronic Systems (IEEE T
 Johann supervised three master's theses: Jiahua Wei (TUHH, 2022, reinforcement-learning reward shaping), Friedrich Werner (THU, 2025, trustworthy aviation AI and operational design domains), and Mina Randolf (University of Cologne, 2026, Safety-by-Design dataset creation and AI model development).
 
 He served as a session chair at the IEEE International Conference on Tools with Artificial Intelligence (ICTAI) in 2024. His DASC 2024 paper, “Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets”, received a Best of Session Paper Award. This recognition is specific to that conference session. Conference talk handouts are available alongside the corresponding papers.
+
+## NeurIPS 2026 Workshop Acceptances
+
+“Defining Operational Conditions for Safety-Critical AI-Based Systems from Data” (Johann Maximilian Christensen, Elena Hoemann, Frank Köster, Sven Hallerbach) is accepted at NeurIPS 2026 and also at two of its Sydney workshops: TAE (Trust-AI-Eval): Can We Trust AI Evaluation? (12 December 2026, https://tai-eval.github.io/) and the 8th Robot Learning Workshop (WRL): Is Physical AI Going Zero-Shot? (11 December 2026, https://www.robot-learning.ml/2026/). These workshop acceptances refer to the same research and should not be counted as additional distinct publications.
