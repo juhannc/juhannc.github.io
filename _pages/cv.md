@@ -24,6 +24,15 @@ redirect_from:
   <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download resume <span>PDF ↗</span></a>
 </header>
 
+<nav class="resume-sections" aria-label="CV sections">
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#expertise">Technical skills</a>
+  <a href="#project-leadership">Leadership</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#selected-publications">Publications</a>
+</nav>
+
 <div class="resume-grid">
   <div class="resume-primary">
     <section aria-labelledby="experience">

@@ -65,3 +65,6 @@ html[data-theme="dark"] .profile-content a { color: #89d4e4; }
   #main.profile-main { display: block; margin: 0; padding: 0; }
   .profile-section, .publication-entry { break-inside: avoid; }
 }
+.sitemap-links { margin: 0; padding-left: 1.1rem; }
+.sitemap-links li + li { margin-top: .8rem; }
+.sitemap-meta { display: block; font-size: .7rem; }

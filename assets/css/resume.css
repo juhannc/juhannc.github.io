@@ -13,6 +13,10 @@
 .resume-download span { font-size: .65rem; letter-spacing: .1em; }
 .resume-download:hover { background: var(--global-text-color); color: var(--global-bg-color); }
 .resume a:focus-visible { outline: 3px solid var(--global-link-color); outline-offset: 5px; }
+.resume-sections { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; font-size: .75rem; }
+.resume-sections a { padding: .4rem .75rem; border: 1px solid var(--global-border-color); border-radius: .25rem; text-decoration: none; }
+.resume-sections a:hover { border-color: var(--global-base-color); }
+.resume h2[id] { scroll-margin-top: 6rem; }
 .resume-grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 3.5rem; padding-top: 2.5rem; }
 .resume section + section { margin-top: 2.5rem; }
 .resume h2 { margin: 0 0 1.3rem; padding-bottom: .65rem; border-bottom: 1px solid var(--global-border-color); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
@@ -49,7 +53,7 @@
   .resume-secondary { padding-left: 0; border-left: 0; }
 }
 @media print {
-  .masthead, .page__footer, .resume-download, .resume-contact { display: none !important; }
+  .masthead, .page__footer, .resume-download, .resume-contact, .resume-sections { display: none !important; }
   #main.resume-main { padding: 0; margin: 0; max-width: none; }
   .resume { font-size: 10pt; color: #222; }
   .resume-header { padding-bottom: 1rem; }

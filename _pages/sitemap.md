@@ -1,35 +1,48 @@
 ---
-layout: archive
+layout: profile
 title: "Sitemap"
 permalink: /sitemap/
 author_profile: true
 ---
+<header class="profile-header">
+  <p class="profile-eyebrow">Find your way</p>
+  <h1 id="profile-title">Sitemap</h1>
+  <p class="profile-lead">Research, experience, and publications in one place.</p>
+</header>
 
-{% include base_path %}
+<section class="profile-section" aria-labelledby="main-pages">
+  <h2 id="main-pages">Main pages</h2>
+  <ul class="sitemap-links">
+    <li><a href="{{ '/' | relative_url }}">Homepage</a> — research interests and background.</li>
+    {% for link in site.data.navigation.main %}
+    <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+<section class="profile-section" aria-labelledby="resources">
+  <h2 id="resources">Downloads &amp; machine-readable information</h2>
+  <ul class="sitemap-links">
+    <li><a href="{{ '/files/CV.pdf' | relative_url }}">Resume PDF</a></li>
+    <li><a href="{{ '/llms.txt' | relative_url }}">Profile for LLMs (llms.txt)</a></li>
+    <li><a href="{{ '/sitemap.xml' | relative_url }}">XML sitemap</a></li>
+  </ul>
+</section>
 
-<h2>Pages</h2>
-{% include archive-pages.html %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% for category in site.publication_category %}
+  {% assign entries = publications | where: 'category', category[0] %}
+  {% if entries.size > 0 %}
+  <section class="profile-section" aria-labelledby="sitemap-{{ category[0] }}">
+    <h2 id="sitemap-{{ category[0] }}">{{ category[1].title }}</h2>
+    <ul class="sitemap-links">
+      {% for publication in entries %}
+      <li>
+        <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+        <span class="sitemap-meta">{{ publication.date | date: '%Y' }}{% if publication.publication_status %} · {{ publication.publication_status }}{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
 {% endfor %}

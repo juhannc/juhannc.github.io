@@ -11,7 +11,7 @@ redirect_from:
 <header class="profile-header">
   <p class="profile-eyebrow">Research · Engineering · Aviation</p>
   <h1 id="profile-title">Engineering AI for <br>safety-critical systems.</h1>
-  <p class="profile-lead">I’m Johann Christensen, a researcher working on safe, resilient AI for aviation at the German Aerospace Center (DLR).</p>
+  <p class="profile-lead">I’m Johann, an AI expert and researcher developing safe, resilient AI for aviation at the German Aerospace Center (DLR).</p>
   <p>I develop Safety-by-Design approaches that connect AI research with the demands of aviation certification: understanding where a system can operate, verifying its behavior, and building the evidence needed to trust it.</p>
   <nav class="profile-actions" aria-label="Explore my work">
     <a class="profile-button" href="{{ '/publications/' | relative_url }}">Explore publications <span aria-hidden="true">↗</span></a>
