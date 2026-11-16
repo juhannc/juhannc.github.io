@@ -1,10 +1,4 @@
 (() => {
-  const theme = document.querySelector('.theme-toggle');
-  theme?.addEventListener('click', () => {
-    const dark = document.documentElement.dataset.theme !== 'dark';
-    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-    try { localStorage.setItem('poc-theme', dark ? 'dark' : 'light'); } catch (_) {}
-  });
   const controls = document.querySelector('[data-library-controls]');
   if (!controls) return;
   controls.hidden = false;
