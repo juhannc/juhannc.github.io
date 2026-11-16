@@ -28,7 +28,7 @@ class SiteBuildTests(unittest.TestCase):
   self.assertEqual(home.select_one('link[rel="canonical"]')['href'],'https://www.chrstnsn.de/')
   self.assertEqual(len(home.select('.organization-logo')),3)
  def test_conference_handouts_belong_to_matching_publications(self):
-  for slug in ['2024-09-29-Towards-Certifiable-AI-in-Aviation','2024-10-28-Advancing-the-AI-Based-Realization-of-ACASX']:
+  for slug in ['2024-09-29-Towards-Certifiable-AI-in-Aviation','2024-10-28-Advancing-the-AI-Based-Realization-of-ACASX','2026-09-13-On-the-Applicability-of-Safety-Nets-A-Safety-By-Design-Solution-for-Certifying-Neural-Networks']:
    page=self.soup(f'publication/{slug}/index.html')
    a=page.find('a',string=lambda x:x and 'Talk Handout' in x)
    self.assertIsNotNone(a)
