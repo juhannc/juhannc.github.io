@@ -105,7 +105,7 @@ redirect_from:
         <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
         <p class="resume-date">October 2017 – September 2019</p>
         <div class="resume-thesis">
-          <h4>Master’s Thesis · M.Sc. Component</h4>
+          <h4>Master’s Thesis</h4>
           <p class="resume-organization">Hybrid Robotics Lab · University of California, Berkeley</p>
           <p class="resume-date">October 2018 – September 2019</p>
           <p>Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots</p>
