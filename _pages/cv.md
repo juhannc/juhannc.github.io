@@ -1,103 +1,123 @@
 ---
-layout: archive
+layout: resume
 title: "CV"
 permalink: /cv/
-author_profile: true
+excerpt: "Johann Christensen — Safe AI Engineering, aviation safety, and robotics."
 redirect_from:
   - /resume
+  - /cv-json/
+  - /resume-json
 ---
+<header class="resume-header">
+  <div>
+    <p class="resume-eyebrow">Curriculum vitae</p>
+    <h1 id="resume-title">Johann Christensen</h1>
+    <p class="resume-tagline">Expert for Safe AI Engineering <span aria-hidden="true">/</span> PhD Candidate</p>
+    <p class="resume-intro">Developing resilient AI systems for aviation, with a focus on Safety-by-Design, operational design domains, and the path to certification.</p>
+    <nav class="resume-contact" aria-label="Contact and research profiles">
+      <a href="mailto:johannchristensen@outlook.de">Email</a>
+      <a href="https://github.com/juhannc">GitHub</a>
+      <a href="https://orcid.org/0000-0001-9871-122X">ORCID</a>
+      <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+    </nav>
+  </div>
+  <a class="resume-download" href="{{ '/files/CV.pdf' | relative_url }}" download>Download resume <span>PDF ↗</span></a>
+</header>
 
-{% include base_path %}
+<div class="resume-grid">
+  <div class="resume-primary">
+    <section aria-labelledby="experience">
+      <h2 id="experience">Experience</h2>
+      <article class="resume-entry">
+        <p class="resume-date">October 2023 – Present <span>Germany</span></p>
+        <h3>Research Associate</h3>
+        <p class="resume-organization">German Aerospace Center (DLR)</p>
+        <ul>
+          <li>Developing resilient, safety-critical AI systems for aviation and advancing Safety-by-Design frameworks for AI certification.</li>
+          <li>Defining operational design domains (ODDs) and developing ODD-aware training methods for limited data scenarios.</li>
+          <li>Developing guardrails for LLMs used as air traffic controllers.</li>
+          <li>Contributing to EUROCAE WG-114 on Artificial Intelligence.</li>
+          <li>Managing projects with funding of up to €5 million and acquiring national and European funding.</li>
+        </ul>
+      </article>
+      <article class="resume-entry">
+        <p class="resume-date">October 2019 – August 2023 <span>Hamburg, Germany</span></p>
+        <h3>AI and Robotics Engineer</h3>
+        <p class="resume-organization">ZAL Center of Applied Aeronautical Research</p>
+        <ul>
+          <li>Developed reinforcement learning systems for industrial applications, with a focus on PPO and SAC.</li>
+          <li>Built robots in simulation and hardware, including a ROS-based digital twin of a UR10e.</li>
+          <li>Built an MLOps pipeline to accelerate model training and automate CI/CD for deployment to edge devices.</li>
+          <li>Acquired a total of €8 million in research funding and managed government-funded projects.</li>
+        </ul>
+      </article>
+    </section>
 
-[Download my CV as a pdf](https://www.chrstnsn.de/files/CV.pdf)
+    <section aria-labelledby="selected-publications">
+      <div class="resume-section-heading">
+        <h2 id="selected-publications">Selected publications</h2>
+        <a href="{{ '/publications/' | relative_url }}">All publications ↗</a>
+      </div>
+      {% assign selected_keys = 'Christensen2026,Christensen2025,Berro2025,Christensen2024' | split: ',' %}
+      <ol class="resume-publications">
+        {% for key in selected_keys %}
+          {% assign publication = site.publications | where: 'bibkey', key | first %}
+          {% if publication %}
+          <li>
+            <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+            <p>{{ publication.venue }} · {{ publication.date | date: '%Y' }}{% if publication.publication_status %} · {{ publication.publication_status }}{% endif %}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
 
-## Work experience
+  <div class="resume-secondary">
+    <section class="resume-award" aria-labelledby="award">
+      <p class="resume-eyebrow">Recognition</p>
+      <h2 id="award">Best of Session Paper Award</h2>
+      <p>Digital Avionics Systems Conference (DASC), 2024</p>
+    </section>
 
-* 10/23 - today
-  * Research Associate
-  * DLR Institute for AI Safety and Security
-  * Sankt Augustin, Germany (remote)
-  * Researching and developing novel safe and resilient AI systems for the aviation domain. Pursuing my Ph. D. (Dr.-Ing.) in the field of artificial intelligence.
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <article class="resume-entry">
+        <p class="resume-date">October 2024 – 2027 (expected)</p>
+        <h3>PhD (Dr.-Ing.) in Safe AI Engineering</h3>
+        <p class="resume-organization">Ruhr University Bochum</p>
+        <p>Working title: On the Development of Safety-by-Design AI-Based Systems in Safety-Critical Applications</p>
+        <p class="resume-detail">Supervisor: Prof. Frank Köster</p>
+      </article>
+      <article class="resume-entry">
+        <p class="resume-date">October 2017 – September 2019</p>
+        <h3>M.Sc. in Aircraft Systems Engineering</h3>
+        <p class="resume-organization">Hamburg University of Technology (TUHH)</p>
+      </article>
+      <article class="resume-entry">
+        <p class="resume-date">October 2018 – September 2019</p>
+        <h3>Master’s thesis · UC Berkeley</h3>
+        <p>Obstacle Avoidance-Driven Controller for Safety-Critical Aerial Robots</p>
+        <p class="resume-detail">Supervisor: Prof. Koushil Sreenath</p>
+      </article>
+    </section>
 
-* 10/19 - 08/23
-  * Developing Engineer for Artificial Intelligence and robotics
-  * ZAL Center of Applied Aeronautical Research
-  * Hamburg, Germany
-  * Bringing AI into the industry. Working on research and development for research projects as well as contract research and support of industrial customers. Focusing on reinforcement learning and (simulated) robotic systems in hard- and software. Managing governmental funded research projects and representing them at conferences. Building an internal workflow to speed up the training of machine learning algorithms and streamline the deployment of trained models to the edge. Also responsible for writing proposals for government funded projects. Moreover, responsible for managing the in-house robotics simulation server and local GitLab instance.
+    <section aria-labelledby="expertise">
+      <h2 id="expertise">Technical skills</h2>
+      <dl class="resume-skills">
+        <div><dt>Python</dt><dd>Proficient</dd></div>
+        <div><dt>PyTorch</dt><dd>Advanced</dd></div>
+        <div><dt>MLOps</dt><dd>Advanced</dd></div>
+        <div><dt>CI/CD</dt><dd>Advanced</dd></div>
+      </dl>
+    </section>
 
-* 12/16 - 06/18
-  * Working Student
-  * Cabin Supply Modules A350 (Airbus)
-  * Hamburg, Germany
-  * Primarily worked as Project Management support for R&D projects concerning new developments within the cabin focusing on Galleys. Especially managing a project which aimed to develop a replacement for the state-of-the-art honeycomb panels. Thus, operated as the focal point for the management, subcontractors, and different divisions across Airbus all working on the project. Therefore, bore the responsibility for multiple deliverables within different projects. Lastly, finished the project by passing TRL 6, hence, allowing Entry-into-Service.
-
-* 09/16 - 01/18
-  * Teamleader
-  * HAMBURG - a REXUS/BEXUS project (funded by the German Aerospace Center and European Space Agency)
-  * Hamburg, Germany; Bremen, Germany; Kiruna, Sweden
-  * Led a student experiment for a REXUS/BEXUS project, a German-Swedish student programme in cooperation with DLR and ESA. Been responsible for the entire project, but mostly focused on hard- and software development. Moreover, built the experiment and performed different functional and performance tests afterward. Finally, led and managed a trip to Kiruna, Sweden, on which the experiment was again fully tested and mounted to a balloon, reaching an altitude of 25 000 m.
-
-* 01/16 - 04/16
-  * Bachelor's Thesis: Development and Control of a Dive Cell
-  * Institute of Mechanics and Ocean Engineering (M-13, MuM), Hamburg University of Technology
-  * Hamburg, Germany
-  * Designed as well as built an autonomous diving cell as a proof of concept of isobaric stabilization. The diving cell is built around an actuator which was used to change the volume and therefore the buoyancy. Furthermore, for the control laws, investigated different options and finally settled on a PID-controller as a simple solution and a Sliding-Mode-controller as a more advanced solution for comparison.
-
-## Education
-
-* 02/21 - 08/23
-  * External Ph. D. (Dr.-Ing.) candidate
-  * Hamburg University of Technology
-  * Hamburg, Germany
-  * Research in the field of reinforcement learning for mechatronic systems. Focusing on the development of novel reinforcement learning algorithms for linear-parameter varying systems to approximate real mechatronic systems to speed up training.
-
-* 10/16 - 09/19
-  * Aircraft Systems Engineering, M.Sc.
-  * Hamburg University of Technology
-  * Hamburg, Germany
-  * Pursuing a Master's degree in Aircraft Systems Engineering focusing on Aircraft Systems, and moreover specializing on Control Systems, Robotics and Machine Learning.
-
-* 11/18 - 04/19
-  * Visiting Research Scholar
-  * University of California, Berkeley
-  * Berkeley (CA), United States
-  * Researcher in the Hybrid Robotics Lab of Asst. Prof. Koushil Sreenath. Working on autonomous flight control of aerial quadrotors. Focusing on developing and implementing novice obstacle avoidance technology for enhanced path planning.
-
-* 10/12 - 09/16
-  * Mechanical Engineering, B.Sc.
-  * Hamburg University of Technology
-  * Hamburg, Germany
-  * Pursuing a Bachelor's degree in Mechanical Engineering focusing on Aircraft Systems Engineering.
-
-## Skills
-
-* Languages
-  * German (native)
-  * English (fluent, C1)
-* CAD
-  * Catia
-  * Inventor
-  * SolidEdge
-  * SolidWorks
-* Calculation
-  * Maple
-  * MATLAB
-  * Simulink
-* Programming
-  * C
-  * C++
-  * git
-  * Java
-  * PX4
-  * Python
-  * ROS
-  * TensorFlow
-* Other
-  * CI/CD
-  * GitLab
-
-## Publications
-
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+    <section aria-labelledby="languages">
+      <h2 id="languages">Languages</h2>
+      <dl class="resume-skills">
+        <div><dt>German</dt><dd>Native</dd></div>
+        <div><dt>English</dt><dd>Fluent · C2</dd></div>
+      </dl>
+    </section>
+  </div>
+</div>

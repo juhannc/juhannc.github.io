@@ -1,24 +1,14 @@
 ---
-title: "Towards an Operational Design Domain for Safe Human-AI Teaming in the Field of AI-Based Air Traffic Controller Operations"
+title: Towards an Operational Design Domain for Safe Human-AI Teaming in the Field of AI-Based Air Traffic Controller Operations
 collection: publications
 category: conferences
 permalink: /publication/2024-09-29-Towards-an-Operational-Design-Domain-for-Safe-Human-AI-Teaming
-excerpt: "Advances in AI offer promising applications in aviation but pose safety challenges, particularly in Human-AI Teaming. The European Union Aviation Safety Agency (EASA) emphasizes safety in dynamic human-AI collaboration with shared goals and partial authority. This work adapts the Operational Design Domains (ODDs) concept to Air Traffic Control (ATC), defining an initial ODD for an AI-based team partner aiding conflict detection and resolution. Simulations test scenarios to evaluate ODD feasibility in ATC safety."
-date: 2024-09-29
-venue: "2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)"
-paperurl: "https://doi.org/10.1109/dasc62030.2024.10749684"
-slidesurl: # URL to slides pdf
-citation: "Stefani, T., Jameel, M., Hunger, R., Gerdes, I., Anilkumar Girija, A., <b>Christensen, J. M.</b>, Bruder, C., K&ouml;ster, F., Hallerbach, S. and Kr&uuml;ger, T. &quot;Towards Certifiable AI in Aviation: A Framework for Neural Network Assurance Using Advanced Visualization and Safety Nets&quot;, in <i>2024 IEEE/AIAA 43st Digital Avionics Systems Conference (DASC)</i>, Sep. 2024."
+bibkey: Stefani2024
+excerpt: This work investigates operational design domains for safe collaboration between human air traffic controllers and AI-based automation.
+date: '2024-09-29'
+venue: 2024 AIAA DATC/IEEE 43rd Digital Avionics Systems Conference (DASC)
+paperurl: https://doi.org/10.1109/dasc62030.2024.10749684
+citation: Thomas Stefani, Mohsan Jameel, Ingrid Gerdes, Robert Hunger, Carmen Bruder, Elena Hoemann, <b>Johann Maximilian Christensen</b>, Akshay Anilkumar Girija, Frank Köster, Thomas Krüger, Sven Hallerbach. &quot;Towards an Operational Design Domain for Safe Human-AI Teaming in the Field of AI-Based Air Traffic Controller Operations&quot;. <i>2024 AIAA DATC/IEEE 43rd Digital Avionics Systems Conference (DASC)</i>, 2024.
 ---
-Advances in Artificial Intelligence (AI) introduce both promising real-world applications in various fields such as aviation but also challenges in assuring safety.
-Regulators in aviation mandate, as with any other application, compliance of these AI-based systems with high safety standards.
-This especially holds for Human-AI Teaming.
-The European Union Aviation Safety Agency (EASA) outlined in their concept paper the definitions of cooperation and collaboration between humans and AI, as well as the differences in terms of authority and task allocation.
-Therein, the question of safety in situations of collaboration with shared goals, dynamic task allocation, and partial authority within the Human-AI team is paramount.
-As a safety concept, EASA requires the usage of Operational Design Domains (ODDs) from the automotive field.
 
-In this work, the concept of ODDs is transferred to the Air Traffic Control (ATC) domain.
-An initial ODD is defined for an AI-based digital team partner that supports Air Traffic Controllers in their daily work even for safety-critical tasks such as conflict detection and resolution.
-Additionally, the required tools for successfully executing this task is demonstrated.
-Based on the ODD description, conflict scenarios are generated and tested in a simulation environment, showcasing situations inside and outside the ODD.
-Based on these results, the feasibility of using ODDs in ATC is discussed, outlining a potential step towards the safe application of Human-AI Teaming.
+The application of Artificial Intelligence (AI) in aviation has gained significant attention in recent years, particularly in safety-critical domains such as aviation. One possible application in this domain is the next version of the Airborne Collision Avoidance System X (ACAS X). The current system, ACAS II, with its state-of-the-art implementation, TCAS II, has been in use for decades and has significantly reduced the number of mid-air collisions. However, it relies on a simple rule/heuristics-based logic, leading to false positives which increases the workload of both pilots and air traffic controllers unnecessarily. The next generation of collision avoidance systems, ACAS X, instead uses exhaustive lookup tables to determine resolution advisories. These lookup tables, however, are too large to be stored on current avionics hardware. Thus, neural networks can compress these lookup tables significantly, enabling the deployment of ACAS X on current avionics hardware. Nevertheless, deploying an AI-based system for predicting resolution advisories raises safety concerns regardless of whether it is used in commercial or unmanned aircraft. To mitigate these concerns, it is crucial to not only train the AI-based system on a substantial amount of data but also to understand and define the environmental conditions in which is supposed to operate. This concept is referred to as the Operational Design Domain (ODD). Monitoring ODD conditions is essential to ensure the safe operation of the AI-based system. This paper presents a novel methodology for predictive ODD monitoring, leveraging temporal scene analysis to assess potential scenarios that an AI-based system may encounter. Temporal scene analysis is a methodology that analyses scenarios by dividing them into discrete scenes, each representing a specific point in time within the scenario. This approach allows for a detailed examination of the scenario's progression, identifying critical situations and transitions that may impact the AI-based system's performance and safety. For this, it utilizes a database of scenarios generated based on the ODD description. Splitting the scenario into scenes and rearranging them to create new synthetic scenarios increases the data available for predictive ODD monitoring. All this will be demonstrated in the context of a collision avoidance use case.

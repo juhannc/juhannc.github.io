@@ -85,6 +85,8 @@ publication_category:
     title: "Journal Articles"
   conferences:
     title: "Conference Papers"
+  software:
+    title: "Research Software"
   academic:
     title: "Academic Theses"
   preprints:
@@ -184,6 +186,10 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - package-lock.json
+  - Gemfile.lock
+  - docs
+  - AGENTS.md
   - Rakefile
   - README
   - tmp
@@ -206,6 +212,7 @@ kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
+  header_links: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
@@ -286,13 +293,13 @@ defaults:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
@@ -341,8 +348,9 @@ tag_archive:
 #     tag: /tags/:name/
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
+  comments: ["<!-- ", " -->"]
   ignore:
     envs: development
