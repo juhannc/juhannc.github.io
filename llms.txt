@@ -18,7 +18,9 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 - Neural-network assurance and Safety Nets combining neural networks with corrective lookup tables, particularly for horizontal and vertical airborne collision avoidance (HCAS and VCAS / ACAS X).
 - AI engineering and learning-assurance processes, including the relationship between EASA's W-shaped development process and iterative DevOps practices.
 - Guardrails for LLM-based support in air traffic control and aligning automated conflict-resolution support with controller preferences.
-- Contributing to EUROCAE WG-114 on Artificial Intelligence, acquiring funding with public and industrial partners, and leading interinstitutional and interdisciplinary projects with funding of up to €5 million.
+- Contributing to EUROCAE WG-114 on Artificial Intelligence.
+- Actively acquiring research projects through European Union (EU) and German funding programmes, as well as directly with companies through industrial collaborations.
+- Leading interinstitutional and interdisciplinary projects with budgets of up to €5 million.
 
 **Professional and Engineering Experience**
 
