@@ -1,1 +1,10 @@
-<div class="review-grid">{% for a in services %}<article class="review-card {% if a.recognition %}recognized{% endif %}"><p class="eyebrow">{{a.role}} · {{a.year}}</p><h3>{{a.short}}</h3>{% if a.short!=a.venue %}<p>{{a.venue}}</p>{% endif %}{% if a.publisher %}<p>{{a.publisher}}</p>{% endif %}{% if a.recognition %}<p class="award"><span aria-hidden="true">✦</span> {{a.recognition}}</p>{% endif %}</article>{% endfor %}</div>
+<div class="review-grid">
+{% for a in services %}
+  <article class="review-card {% if a.recognition %}recognized{% endif %}">
+    <h3>{{a.venue}}</h3>
+    <p class="review-publisher">{{a.publisher}}</p>
+    <p class="review-meta">{{a.role}} · {{a.year}}</p>
+    {% if a.recognition %}<p class="award">{% include 'award-icon.html' %} {{a.recognition}}</p>{% endif %}
+  </article>
+{% endfor %}
+</div>

@@ -49,7 +49,7 @@ redirect_from:
         <h3>AI and Robotics Engineer</h3>
         <p class="resume-organization">ZAL Center of Applied Aeronautical Research</p>
         <ul>
-          <li>Developed reinforcement learning systems for industrial applications, with a focus on PPO and SAC.</li>
+          <li>Developed reinforcement learning systems for industrial applications.</li>
           <li>Built robots in simulation and hardware, including a ROS-based digital twin of a UR10e.</li>
           <li>Built an MLOps pipeline to accelerate model training and automate CI/CD for deployment to edge devices; administered the robotics simulation server and local GitLab instance.</li>
           <li>Acquired a total of €8 million in research funding and managed government-funded projects.</li>
@@ -119,10 +119,10 @@ redirect_from:
     <section aria-labelledby="expertise">
       <h2 id="expertise">Skills</h2>
       <dl class="resume-skill-groups">
-        <div><dt>AI &amp; Machine Learning</dt><dd>Python, PyTorch, reinforcement learning (PPO, SAC), MLOps, and neural-network assurance.</dd></div>
+        <div><dt>AI &amp; Machine Learning</dt><dd>Python, PyTorch, JAX, TensorRT, reinforcement learning, MLOps, and neural-network assurance.</dd></div>
         <div><dt>Robotics &amp; Control</dt><dd>ROS, PX4, C++ for robotics and flight-control integration, MATLAB/Simulink, model predictive control, and control barrier functions.</dd></div>
-        <div><dt>Software &amp; Deployment</dt><dd>Git, GitLab CI/CD, GitHub Actions, TensorRT, and deployment of trained models to edge devices.</dd></div>
-        <div><dt>Mechanical Engineering</dt><dd>Inventor, SolidWorks, hardware prototyping, integration, and experimental testing.</dd></div>
+        <div><dt>Software &amp; Deployment</dt><dd>Git, GitLab CI/CD, GitHub Actions, and deployment of trained models to edge devices.</dd></div>
+        <div><dt>Mechanical Engineering</dt><dd>Inventor, SolidWorks, 3D printing, hardware prototyping, integration, and experimental testing.</dd></div>
       </dl>
     </section>
     <section aria-labelledby="languages">

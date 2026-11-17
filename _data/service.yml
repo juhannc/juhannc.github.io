@@ -1,18 +1,21 @@
-- venue: IEEE Transactions on Aerospace and Electronic Systems
+- venue: Transactions on Aerospace and Electronic Systems (TAES)
   short: IEEE TAES
   year: 2026
   role: Reviewer
+  publisher: IEEE
 - venue: Annals of the New York Academy of Sciences
   short: Annals of the New York Academy of Sciences
   publisher: Wiley
   year: 2026
   role: Reviewer
-- venue: International Conference on Machine Learning
+- venue: International Conference on Machine Learning (ICML)
   short: ICML
   year: 2026
   role: Reviewer
   recognition: Silver Reviewer Award
-- venue: Conference on Neural Information Processing Systems
+  publisher: PMLR
+- venue: Conference on Neural Information Processing Systems (NeurIPS)
   short: NeurIPS
   year: 2026
   role: Reviewer
+  publisher: Curran Associates

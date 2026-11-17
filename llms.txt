@@ -24,7 +24,7 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 
 **Professional and Engineering Experience**
 
-- **AI and Robotics Engineer, ZAL Center of Applied Aeronautical Research, Hamburg (October 2019–August 2023):** researched and developed reinforcement learning systems for industrial applications, particularly PPO and SAC; built robots in simulation and hardware, including a ROS-based digital twin of a UR10e; developed MLOps and CI/CD workflows for faster training and edge deployment; administered a robotics simulation server and a local GitLab instance; managed government-funded research projects and acquired a total of €8 million in research funding.
+- **AI and Robotics Engineer, ZAL Center of Applied Aeronautical Research, Hamburg (October 2019–August 2023):** researched and developed reinforcement learning systems for industrial applications; built robots in simulation and hardware, including a ROS-based digital twin of a UR10e; developed MLOps and CI/CD workflows for faster training and edge deployment; administered a robotics simulation server and a local GitLab instance; managed government-funded research projects and acquired a total of €8 million in research funding.
 - **Visiting Research Scholar, UC Berkeley, Hybrid Robotics Lab (November 2018–April 2019):** researched autonomous quadrotor flight control and obstacle avoidance under Prof. Koushil Sreenath. His master's work combined model predictive control with control barrier functions and included experimental validation on aerial robots. The visiting appointment and the full master's-thesis period (October 2018–September 2019) have different dates.
 - **Working Student, Airbus, Cabin Supply Modules A350, Hamburg (December 2016–June 2018):** supported project management for cabin R&D, especially galleys. Managed development of an alternative to conventional honeycomb panels, coordinated management, suppliers, and Airbus teams, and supported project deliverables through Technology Readiness Level 6.
 - **Team Leader, HAMBURG experiment, REXUS/BEXUS student programme with DLR and ESA (September 2016–January 2018):** led a student experiment with responsibility for project coordination, hardware and software development, integration, and testing. Organized the campaign in Kiruna, Sweden, where the experiment flew on a balloon reaching approximately 25,000 metres.
@@ -42,11 +42,11 @@ Since October 2023, he has been a Research Associate at the German Aerospace Cen
 **Technical Skills and Practical Context**
 
 - **Python:** primary programming language, used in open-source projects, machine learning, and ROS-based applications; proficient.
-- **PyTorch:** preferred machine learning framework; advanced. Research experience includes reinforcement learning with PPO and SAC, neural-network assurance, limited-data learning, and ODD-aware training.
+- **AI and machine learning:** PyTorch, JAX, and TensorRT, with research experience in reinforcement learning, neural-network assurance, limited-data learning, and ODD-aware training. PyTorch is his preferred machine learning framework (advanced).
 - **Robotics and flight control:** extensive hands-on ROS experience; PX4 custom-module development; C++ working knowledge primarily for ROS and PX4 integration. Experience includes robotic digital twins, UR10e simulation and hardware, aerial quadrotors, and underwater robotics.
 - **Control and modeling:** MATLAB/Simulink experience across multiple projects; model predictive control, control barrier functions, PID control, sliding-mode control, and linear parameter-varying systems.
-- **Software and deployment:** Git for version control, GitLab CI/CD and GitHub Actions, MLOps pipelines, model deployment to edge devices, and TensorRT experience for edge inference. Responsibilities have included GitLab and robotics simulation-server administration.
-- **Mechanical engineering:** CAD experience with Inventor and SolidWorks, plus hardware prototyping, integration, and functional and performance testing.
+- **Software and deployment:** Git for version control, GitLab CI/CD and GitHub Actions, MLOps pipelines, model deployment to edge devices. Responsibilities have included GitLab and robotics simulation-server administration.
+- **Mechanical engineering:** CAD experience with Inventor and SolidWorks, plus 3D printing, hardware prototyping, integration, and functional and performance testing.
 - **Project leadership and communication:** research proposals and funding acquisition, interdisciplinary and interinstitutional coordination, government-funded project management, industrial customer collaboration, supplier coordination, conference presentations, public relations, student mentoring, and teaching.
 - **Languages:** German (native); English (fluent, C2).
 
@@ -75,7 +75,7 @@ Publication pages distinguish authored papers, academic theses, preprints, and s
 
 ## Academic Service (2026)
 
-Johann reviews for IEEE Transactions on Aerospace and Electronic Systems (IEEE TAES), Annals of the New York Academy of Sciences (Wiley), ICML, and NeurIPS in 2026. He received an ICML 2026 Silver Reviewer Award.
+Johann reviews for IEEE Transactions on Aerospace and Electronic Systems (IEEE TAES), Annals of the New York Academy of Sciences (Wiley), the International Conference on Machine Learning (ICML; proceedings published by PMLR), and the Conference on Neural Information Processing Systems (NeurIPS; proceedings published by Curran Associates) in 2026. He received an ICML 2026 Silver Reviewer Award.
 
 Johann supervised three master's theses: Jiahua Wei (TUHH, 2022, reinforcement-learning reward shaping), Friedrich Werner (THU, 2025, trustworthy aviation AI and operational design domains), and Mina Randolf (University of Cologne, 2026, Safety-by-Design dataset creation and AI model development).
 
