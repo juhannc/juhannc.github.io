@@ -73,6 +73,7 @@ def build(out):
                 selected=[by_key[k] for k in ['Christensen2026', 'Christensen2026a', 'Christensen2025']],
                 cv_selected=[by_key[k] for k in ['Christensen2026', 'Christensen2025', 'Berro2025', 'Christensen2024']],
                 cv_panels=cv_panels, site_url=site_url,
+                image_versions={p.name: hashlib.sha256(p.read_bytes()).hexdigest()[:12] for p in (ROOT / "images").iterdir() if p.is_file()},
                 asset_versions={p.name: hashlib.sha256(p.read_bytes()).hexdigest()[:12] for p in (HERE / "assets").iterdir() if p.is_file()},
                 profile_description='Johann Christensen — AI expert and researcher at DLR. Safe AI for aviation, robotics, and autonomous systems.')
     paths = []

@@ -119,10 +119,12 @@ redirect_from:
     <section aria-labelledby="expertise">
       <h2 id="expertise">Skills</h2>
       <dl class="resume-skill-groups">
-        <div><dt>AI &amp; Machine Learning</dt><dd>Python, PyTorch, JAX, TensorRT, reinforcement learning, MLOps, and neural-network assurance.</dd></div>
-        <div><dt>Robotics &amp; Control</dt><dd>ROS, PX4, C++ for robotics and flight-control integration, MATLAB/Simulink, model predictive control, and control barrier functions.</dd></div>
-        <div><dt>Software &amp; Deployment</dt><dd>Git, GitLab CI/CD, GitHub Actions, and deployment of trained models to edge devices.</dd></div>
-        <div><dt>Mechanical Engineering</dt><dd>Inventor, SolidWorks, 3D printing, hardware prototyping, integration, and experimental testing.</dd></div>
+        <div><dt>AI &amp; Machine Learning</dt><dd>Supervised learning (neural-network regression and classification), reinforcement learning, model training and evaluation, and LLM integration and guardrails. PyTorch, JAX, TensorRT; experiment tracking with Weights &amp; Biases.</dd></div>
+        <div><dt>AI Safety &amp; Assurance</dt><dd>Safety-by-Design, learning assurance, operational design domains (specification, reconstruction, and monitoring), data coverage and representativeness, and scenario-based verification.</dd></div>
+        <div><dt>Robotics, Control &amp; Simulation</dt><dd>Robotics software and hardware integration with ROS and PX4; Isaac Sim/Gym, digital twins, robotics simulation, and simulation-based dataset generation. Model predictive control, control barrier functions, constrained optimization, MATLAB/Simulink, and C++ for robotics and flight-control integration.</dd></div>
+        <div><dt>Research Software &amp; MLOps</dt><dd>Python, NumPy/SciPy, package and API development, automated testing, static typing, Git, GitLab CI/CD, GitHub Actions, Docker, MLOps, and deployment to edge devices.</dd></div>
+        <div><dt>Engineering &amp; Prototyping</dt><dd>Inventor, SolidWorks, 3D printing, hardware prototyping, integration, and experimental testing.</dd></div>
+        <div><dt>Research &amp; Project Leadership</dt><dd>Research proposals and funding acquisition through EU and German programmes and direct industry collaboration; interdisciplinary and interinstitutional projects with budgets up to €5 million; student supervision and research communication.</dd></div>
       </dl>
     </section>
     <section aria-labelledby="languages">
