@@ -48,7 +48,8 @@ class SiteBuildTests(unittest.TestCase):
    cards=page.select('.review-card')
    self.assertEqual(len(cards),4)
    for card in cards:
-    self.assertEqual(card.find(recursive=False).name,'h3')
+    self.assertIn('review-meta',card.find(recursive=False).get('class',[]))
+    self.assertEqual(card.select_one('.review-meta').find_next_sibling().name,'h3')
     self.assertTrue(card.select_one('.review-publisher').get_text(strip=True))
    self.assertEqual(len(page.select('.conference-service h3')),2)
    self.assertEqual(len(page.select('.award-icon')),2)
